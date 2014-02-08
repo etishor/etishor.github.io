@@ -1,0 +1,38 @@
+{% include head.html %}
+
+<div class="blog-masthead">
+  <div class="container">
+    <nav class="blog-nav">
+      <a class="blog-nav-item active" href="/">Home</a>
+      <a class="blog-nav-item" href="/">About</a>
+  </nav>
+</div>
+</div>
+
+<div class="container">
+
+  <div class="blog-header">
+    <h1 class="blog-title"><a href="/">Erata.NET</a></h1>
+    <p class="lead blog-description">If we don’t have the solution you have the wrong problem</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-8 blog-main">
+
+        {{ content }}
+
+        <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+
+    </div><!-- /.blog-main -->
+
+    {% include sidebar.html %}
+
+</div><!-- /.row -->
+
+</div><!-- /.container -->
+
+
+{% include footer.html %}

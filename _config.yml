@@ -1,0 +1,9 @@
+url: http://www.erata.net
+name: Erata.NET
+description: "If we don't have the solution you have the wrong problem" 
+
+permalink: /:categories/:title
+markdown: rdiscount
+safe: true
+lsi: false
+pygments: true
