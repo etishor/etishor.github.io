@@ -1,6 +1,7 @@
 ---
 title: Great slides from Rob Ashton
 layout: post
+comments : true
 dsq_thread_id:
   - 1457870865
 categories:

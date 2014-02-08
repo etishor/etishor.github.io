@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://erata.net/sitemap.xml 

@@ -1,10 +1,45 @@
-url: http://www.erata.net
+#
+# Blog Settings
+#
+author: Iulian Margarintescu
 name: Erata.NET
-description: "If we don't have the solution you have the wrong problem" 
+description: If we don't have the solution you have the wrong problem
+url: http://www.erata.net
+title: Erata.NET
 
+gravatar_url: https://2.gravatar.com/avatar/304fa0b2c6959637986e716642c5e57d
+subscribe_rss: http://feeds.haacked.com/haacked
+
+# Github repositories
+github_user: etishor
+github_repo_url: https://github.com/etishor/etishor.github.io/
+
+# Twitter
+twitter_user: etishor
+twitter_tweet_button: true
+
+# Disqus Comments
+disqus_short_name: eratanet
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-632446-1
+
+#
+# Jekyll Settings
+#
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+  
 permalink: /:categories/:title
-markdown: rdiscount
+paginate: 20
+paginate_path: "page/:num"
+category_dir: categories
+
+excerpt_link: "Read on &rarr;"
+titlecase: true 
+
 safe: true
 lsi: false
 pygments: true
-excerpt_separator: <!--more-->

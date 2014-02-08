@@ -1,15 +1,14 @@
 ---
-title: Moving to Jekyll
-layout: post
+layout : post
+title : Moving to Jekyll
+comments : true
+date : 2014-02-08
 category : general
-tags : 
-    - blog
-    - wordpress
-    - jekyll
+tags : [blog,wordpress,jekyll]
 ---
 
 With hope that this will also mean writing more often, I've finaly decided to move to a modern blogging platform.
-<!--more-->
+
 
 ### Moving away from Wordpress
 
