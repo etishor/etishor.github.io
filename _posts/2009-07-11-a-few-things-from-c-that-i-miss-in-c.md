@@ -2,10 +2,7 @@
 title: A few things from C++ that i miss in C#
 layout: post
 comments : true
-views:
-  - 1327
-dsq_thread_id:
-  - 306769001
+dsq_thread_id: 90 http://www.erata.net/?p=90
 category : net
 tags:
   - c sharp
