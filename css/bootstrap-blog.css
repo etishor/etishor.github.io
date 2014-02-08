@@ -126,17 +126,19 @@ h6, .h6 {
 
 
 /* Pagination */
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
+.pagernav {
+    font-family: arial;
+    width: 100%;
+    margin: 20px 0;
 }
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
+.pagernav div { display: inline-block }
+.pagernav div.next { float: right }
 
+.share {
+    padding: 15px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+}
 
 /*
  * Blog posts
