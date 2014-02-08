@@ -4,13 +4,8 @@ layout: post
 comments : true
 dsq_thread_id:
   - 1457870865
-categories:
-  - Programming
-tags:
-  - rob ashton
-  - tdd
-  - Testing
-  - unit tests
+category: Programming
+tags: [rob ashton,tdd,testing,unit tests]
 ---
 Listen to the pain
 ------------------
