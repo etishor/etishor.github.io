@@ -31,10 +31,11 @@ addthis_profile_id: ra-52f64bc20be7aa3d
 #
 # Jekyll Settings
 #
+encoding: UTF-8
 markdown: redcarpet
 redcarpet:
   extensions: ["tables"]
-  
+
 permalink: /:categories/:title
 paginate: 20
 paginate_path: "page/:num"

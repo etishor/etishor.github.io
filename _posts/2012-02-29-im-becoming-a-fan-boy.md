@@ -1,5 +1,5 @@
 ---
-title: 'I'm becoming a fan boy'
+title: I'm becoming a fan boy
 author: Iulian Margarintescu
 layout: post
 permalink: /mac/im-becoming-a-fan-boy/
