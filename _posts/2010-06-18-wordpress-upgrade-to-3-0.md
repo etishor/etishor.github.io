@@ -18,4 +18,4 @@ tags:
   - upgrade
   - wordpress
 ---
-.. And again WordPress upgrade worked like a charm&#8230; on click db backup &#8230; one click upgrade from 2.X to 3.0. All the plugins seem to work fine but if you see anything wrong please drop me a line.
+.. And again WordPress upgrade worked like a charm... on click db backup ... one click upgrade from 2.X to 3.0. All the plugins seem to work fine but if you see anything wrong please drop me a line.

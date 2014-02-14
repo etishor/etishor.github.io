@@ -40,7 +40,7 @@ tags:
   - unix
   - update
 ---
-Finally the linux-flash7 plugin works with native firefox. If it&#8217;s not working for you this may help.
+Finally the linux-flash7 plugin works with native firefox. If it's not working for you this may help.
 
 <!--more-->
 
@@ -93,7 +93,7 @@ post][1] may be more usefull. The if you still have problems you may try the tip
 
 If in the future the dependency on the linux emulation layer is removed from linux-flash7 port it will be ok to install the port as you would normally do, but until then i prefer to manually unpack the two files instead of installing the hole linux-base port(s) witch is not needed anyway for the plugin to work.  
   
-If it works congratulations, if firefox crashes and opera displays just an empty box &#8230; read on.
+If it works congratulations, if firefox crashes and opera displays just an empty box ... read on.
 
 ## Fixing Plugin Crash
 
@@ -102,7 +102,7 @@ Here there are two things to try. (the first one is recommended)
 1.  edit /etc/X11/xorg.conf and **disable the Composite extension** and **set the ColorDepth to 24**
 2.  edit /usr/local/bin/firefox and add **export XLIB\_SKIP\_ARGB_VISUALS=1** in the beginning of the file
 
-I&#8217;ve noticed that opera still has some trouble working with the plugin and as a fix I&#8217;ve done a small change to the linuxpluginwrapper port. In compat\_linux/linux\_ioctl.c I&#8217;ve changed the default switch branch from:
+I've noticed that opera still has some trouble working with the plugin and as a fix I've done a small change to the linuxpluginwrapper port. In compat\_linux/linux\_ioctl.c I've changed the default switch branch from:
 
 <div class="dean_ch" style="white-space: wrap;">
   <ol>
@@ -132,7 +132,7 @@ I&#8217;ve noticed that opera still has some trouble working with the plugin and
     
     <li class="li2">
       <div class="de2">
-        &nbsp; &nbsp; dprintf<span class="br0">&#40;</span><span class="st0">"ioctl(fd=%d, request=%08X(on Linux), &#8230;) = %d / ERRNO = %d"</span>, d, l_request, ret, errno<span class="br0">&#41;</span>;
+        &nbsp; &nbsp; dprintf<span class="br0">&#40;</span><span class="st0">"ioctl(fd=%d, request=%08X(on Linux), ...) = %d / ERRNO = %d"</span>, d, l_request, ret, errno<span class="br0">&#41;</span>;
       </div>
     </li>
     
@@ -197,6 +197,6 @@ Information on fixing the crash was gathered from:
 
 ## To be continued
 
-Now that I&#8217;ve learned this i really have a good feeling about linux-flash9 and native browsers. I haven&#8217;t tested yet but i guess the fix for the crashes works also for linux-flash9 with linu-firefox and linux-opera.
+Now that I've learned this i really have a good feeling about linux-flash9 and native browsers. I haven't tested yet but i guess the fix for the crashes works also for linux-flash9 with linu-firefox and linux-opera.
 
  [1]: http://unix.derkeiler.com/Mailing-Lists/FreeBSD/questions/2007-07/msg01919.htm

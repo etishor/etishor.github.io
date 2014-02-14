@@ -48,7 +48,7 @@ Just to be clear, I’m not trying to say that declaring a destructor virtual on
 
 As Herb Sutter and Andrei Alexandrescu state in “C++ Coding Standards: 101 Rules, Guidelines, and Best Practices” item 32:
 
-**Be clear what kind of class you&#8217;re writing**
+**Be clear what kind of class you're writing**
 
 Be clear to yourself and to the users of your class. The most used types of classes are value classes and polymorphic classes. As a rule of thumb:
 
@@ -258,4 +258,4 @@ A very good article about <a href="http://www.gotw.ca/publications/mill18.htm" r
 
 And another great article about <a href="http://www.ddj.com/dept/cpp/184403760" rel="external nofollow">virtual functions</a>
 
-<quote>&#8220;Virtual functions should be treated very much like data members — make them private, until design needs indicate a less restricted approach is indicated. It is much easier to promote them to a more accessible level, than it is to demote them to a more private level.&#8221;</quote>
+<quote>"Virtual functions should be treated very much like data members — make them private, until design needs indicate a less restricted approach is indicated. It is much easier to promote them to a more accessible level, than it is to demote them to a more private level."</quote>

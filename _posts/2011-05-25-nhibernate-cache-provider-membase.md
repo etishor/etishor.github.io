@@ -15,7 +15,7 @@ tags:
   - nhibernate
   - provider
 ---
-I&#8217;ve written a cache provider for [NHibernate][1] which uses [Membase][2] as a cache engine.
+I've written a cache provider for [NHibernate][1] which uses [Membase][2] as a cache engine.
 
 You can find the souce code on [github][3].
 

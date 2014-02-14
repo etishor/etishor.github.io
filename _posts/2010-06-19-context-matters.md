@@ -27,7 +27,7 @@ tags:
 ---
 The next paragraph made me remember of a lot of hours of discussions with various developers:
 
-> If you’re arguing with me that NHibernate is the wrong tool because you’re writing reporting applications, just say “I write reporting applications.”&#160; And when I say “I think NHibernate is the best tool for persisting domain models,” I should probably talk about that specific context.&#160; And definitely, when you say “Linq to Sql rocks!” you better follow that up with “for applications with simplistic domain models.” ( source: [Context Matters][1])
+> If you’re arguing with me that NHibernate is the wrong tool because you’re writing reporting applications, just say “I write reporting applications.”  And when I say “I think NHibernate is the best tool for persisting domain models,” I should probably talk about that specific context.  And definitely, when you say “Linq to Sql rocks!” you better follow that up with “for applications with simplistic domain models.” ( source: [Context Matters][1])
 
 If more developers would think like this we would probably have better tools with better acceptance in a lot less time.
 

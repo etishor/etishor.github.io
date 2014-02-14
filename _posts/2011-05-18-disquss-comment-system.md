@@ -13,6 +13,6 @@ tags:
   - comment
   - disquss
 ---
-I&#8217;ve switched the comments to [disquss][1].  If you have any problems with the new commenting system please let me know.
+I've switched the comments to [disquss][1].  If you have any problems with the new commenting system please let me know.
 
  [1]: http://disqus.com "Disquss"

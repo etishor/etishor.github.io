@@ -24,7 +24,7 @@ tags:
   - Testing
   - wordpress
 ---
-It’s not that writing posts in WordPress is hard, but i just have a feeling that Live Writer might make me write more often <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> . Writing these first lines seems to be a pleasant experience so far. And i would really like to publish some stuff about things that i have been working with and that i found to be quite interesting … [NServiceBus][1] , [NHibernate][2] and other goodies … will see how it goes.
+It’s not that writing posts in WordPress is hard, but i just have a feeling that Live Writer might make me write more often <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> . Writing these first lines seems to be a pleasant experience so far. And i would really like to publish some stuff about things that i have been working with and that i found to be quite interesting ... [NServiceBus][1] , [NHibernate][2] and other goodies ... will see how it goes.
 
 Code snippet test
 
@@ -51,7 +51,7 @@ Code snippet test
   
   <pre><span class="lnum">  11:  </span>}</pre>
   
-  <pre><span class="lnum">  12:  </span>&#160;</pre>
+  <pre><span class="lnum">  12:  </span> </pre>
 </div>
 
 <div class="wlWriterHeaderFooter" style="margin:0px; padding:0px 0px 0px 0px;">

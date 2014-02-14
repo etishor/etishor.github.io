@@ -1,5 +1,5 @@
 ---
-title: 'KDevelop &#8211; KDevTrollProject Problem'
+title: 'KDevelop - KDevTrollProject Problem'
 author: Iulian Margarintescu
 layout: post
 permalink: /freebsd/kdevelop-kdevtrollproject-problem/
@@ -31,11 +31,11 @@ tags:
   - symbol
   - undefined reference
 ---
-After updating kde to 3.5.6 and kdevelop to 3.4.0_1 ( around 15.03.2007 ) kdevelop failed to open qmake based projects. The error was &#8220;Error creating project management plugin KDevTrollProject&#8221;.<!--more-->
+After updating kde to 3.5.6 and kdevelop to 3.4.0_1 ( around 15.03.2007 ) kdevelop failed to open qmake based projects. The error was "Error creating project management plugin KDevTrollProject".<!--more-->
 
 ## Update
 
-On 23.03.2007 a fix has been committed to the kdevelop port so if you encounter this problem it&#8217;s better to update the ports tree and recompile kdevelop.
+On 23.03.2007 a fix has been committed to the kdevelop port so if you encounter this problem it's better to update the ports tree and recompile kdevelop.
 
 ## Finding why
 
@@ -79,7 +79,7 @@ Below are the command lines to build qmake_lex.cpp and relink libkdevqmakeparser
     
     <li class="li1">
       <div class="de1">
-        #cat fix_lex.sh &nbsp;( just to make sure i haven&#8217;t hidden anything in that file <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> )
+        #cat fix_lex.sh &nbsp;( just to make sure i haven't hidden anything in that file <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> )
       </div>
     </li>
     
@@ -105,6 +105,6 @@ Below are the command lines to build qmake_lex.cpp and relink libkdevqmakeparser
 
 ## Conclusion
 
-I somehow have the impression that I&#8217;m the only one having this problem since i haven&#8217;t seen any reports on the mailing lists. It may be some bad combination of autotools/libtools. If I&#8217;m the only one having this problem then it&#8217;s not worth investing more time in a proper fix. If other users will report this problem then probably a patch to add the qmake_lex.cpp file to the Makefile with appropriate rules may be needed. My experience with autotools and handwritten Makefiles is close to zero (and i intend to keep it that way) but i guess the kde folks will have no problem fixing this once the problem i known.
+I somehow have the impression that I'm the only one having this problem since i haven't seen any reports on the mailing lists. It may be some bad combination of autotools/libtools. If I'm the only one having this problem then it's not worth investing more time in a proper fix. If other users will report this problem then probably a patch to add the qmake_lex.cpp file to the Makefile with appropriate rules may be needed. My experience with autotools and handwritten Makefiles is close to zero (and i intend to keep it that way) but i guess the kde folks will have no problem fixing this once the problem i known.
 
 If someone else experiences this problem please leave a comment or a post a message on the freebsd mailing list

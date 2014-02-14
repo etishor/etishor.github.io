@@ -28,7 +28,7 @@ tags:
   - TestClass
   - world test
 ---
-After a few months I&#8217;ve enjoyed the newly ( or not ) added extension methods in 3.0 yesterday i discovered that one of the assumptions I&#8217;ve made about them was false. My assumption was that if the instance on witch you call an extension method is NULL you would get a NullReferenceException. Turns out it&#8217;s not the case and you can call the extension method on a null reference.
+After a few months I've enjoyed the newly ( or not ) added extension methods in 3.0 yesterday i discovered that one of the assumptions I've made about them was false. My assumption was that if the instance on witch you call an extension method is NULL you would get a NullReferenceException. Turns out it's not the case and you can call the extension method on a null reference.
 
 Thinking about it later, it makes sense. In reality extension methods are nothing more than syntax sugar for calling static methods. And since too much sugar can hurt extension methods might do the same thing if not properly used. The code speaks pretty much for itself.
 
@@ -424,11 +424,11 @@ Test code:
 
 Even now is still consider extension methods as a very valuable addition to the language, but you just need to understand exactly what they are. The wrong assumption about calling them on a null reference can affect some design choices you may take where in case of a null reference you want an exception to be thrown and no other method called.
 
-Also using them when appropriate the ability to call extension methods on null references might help you write more readable code by moving the null check in the extension method. This can be particularly useful on writing extension methods that are supposed to be used in Views in ASP.NET MVC where moving the null check in the method leaves the the view&#8217;s html code easier to read an understand.
+Also using them when appropriate the ability to call extension methods on null references might help you write more readable code by moving the null check in the extension method. This can be particularly useful on writing extension methods that are supposed to be used in Views in ASP.NET MVC where moving the null check in the method leaves the the view's html code easier to read an understand.
 
-One conclusion that I&#8217;ve drown from this is that in an extension method you should either check for null and throw NullReferenceException if null is not a valid value or handle null appropriately.
+One conclusion that I've drown from this is that in an extension method you should either check for null and throw NullReferenceException if null is not a valid value or handle null appropriately.
 
-PS: Is it visible that the last 6+ months I&#8217;ve been working with C# and not C++ ? <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
+PS: Is it visible that the last 6+ months I've been working with C# and not C++ ? <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
 
 [<img src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://www.erata.net/net/c-extension-methods/" border="0" alt="kick it on DotNetKicks.com" />][1]
 

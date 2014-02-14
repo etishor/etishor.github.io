@@ -37,19 +37,19 @@ tags:
 ---
 Quick tip that maybe will save others time:
 
-In Windows 7 ( and maybe Vista) when hosting a WCF Service in a console application AS A USER and not as administrator, you might get an exception telling you that you don&#8217;t have access to register with the net.tcp port sharing service.
+In Windows 7 ( and maybe Vista) when hosting a WCF Service in a console application AS A USER and not as administrator, you might get an exception telling you that you don't have access to register with the net.tcp port sharing service.
 
 To resolve this problem:
 
-- Download [PsGetSid][1] ( this will give you the [Security Identifier &#8211; SID][2] for your user or user group )
+- Download [PsGetSid][1] ( this will give you the [Security Identifier - SID][2] for your user or user group )
 
-- Find and open SMSvcHost.exe.config ( usualy in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe.config or c:\Windows\Microsoft.NET\Framework\v4.0.30319\SMSvcHost.exe.config )
+- Find and open SMSvcHost.exe.config ( usualy in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe.config or c:\Windows\Microsoft.NET\Framework\v4.0.30319\SMSvcHost.exe.config )
 
-- Run psgetsid.exe <youraccount> to get the SID ( should look something like this S-1-5-21-1754548885-2506776180-2303324228-4659 )
+- Run psgetsid.exe <youraccount> to get the SID ( should look something like this S-1-5-21-1754548885-2506776180-2303324228-4659 )
 
-- By default the SMSvcHost.exe.config contains a section <system.serviceModel.activation> which has a <net.tcp> child which has a <allowAccounts> child. The IMPORTANT part if you are using an editor that does not do syntax highlight for XML &#8211; THE ABOVE SECTION IS COMMENTED by DEFAULT so adding child <allowAccounts> has not effect.
+- By default the SMSvcHost.exe.config contains a section <system.serviceModel.activation> which has a <net.tcp> child which has a <allowAccounts> child. The IMPORTANT part if you are using an editor that does not do syntax highlight for XML - THE ABOVE SECTION IS COMMENTED by DEFAULT so adding child <allowAccounts> has not effect.
 
-- YOU NEED TO ADD A NEW <system.serviceModel.activation> SECTION with it&#8217;s children sections to make it work ( or uncomment the existing one and removing the // comments which are not valid xml ).
+- YOU NEED TO ADD A NEW <system.serviceModel.activation> SECTION with it's children sections to make it work ( or uncomment the existing one and removing the // comments which are not valid xml ).
 
 - Restart the net.tcp portsharing service and you are good to go.
 
@@ -78,7 +78,7 @@ Also you might need to [grant access][3] to the user to register as a listener f
 
 netsh http add urlacl url=http://+: <port>/MyUri user=DOMAIN\user
 
-I have to admin the most of the time i&#8217;ve spent on this issue was because i was modifying the commented section in the the config xml. </port>
+I have to admin the most of the time i've spent on this issue was because i was modifying the commented section in the the config xml. </port>
 
  [1]: http://technet.microsoft.com/en-us/sysinternals/bb897417 "PsGetSid"
  [2]: http://en.wikipedia.org/wiki/Security_Identifier "Security Identifier"

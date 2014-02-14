@@ -15,9 +15,9 @@ tags:
   - Serialization
   - test data
 ---
-I&#8217;ve pushed to github a new project, [TestDataGenerator][1] that should help with filling random objects with data. I felt the need for a tool like this when testing various serialization techniques and persistence strategies.
+I've pushed to github a new project, [TestDataGenerator][1] that should help with filling random objects with data. I felt the need for a tool like this when testing various serialization techniques and persistence strategies.
 
-Basically this utility should construct the instance of an object using a public constructor, and fill all it&#8217;s public, writable properties with random data.
+Basically this utility should construct the instance of an object using a public constructor, and fill all it's public, writable properties with random data.
 
 Sample usage:
 
@@ -64,7 +64,7 @@ public void Catalog_Can_Create_Using_Consutrctor()
 }</pre>
 
 For more samples see [unit tests][2].  
-I&#8217;ll try to add more cases ( abstract class, interface implementation discovery ) in the future. You are welcome to submit sample classes, preferably as unit tests.
+I'll try to add more cases ( abstract class, interface implementation discovery ) in the future. You are welcome to submit sample classes, preferably as unit tests.
 
  [1]: https://github.com/etishor/TestDataGenerator "Test Data Generator"
  [2]: https://github.com/etishor/TestDataGenerator/tree/master/TestDataGenerator.Tests "Unit Tests"

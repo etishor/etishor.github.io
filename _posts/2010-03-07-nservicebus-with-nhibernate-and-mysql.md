@@ -36,17 +36,17 @@ tags:
   - unix experience
   - Work
 ---
-In the last project I have been working i finally got a chance to design and implement a solution based on [NServiceBus][1] and [NHibernate][2], two tools I’ve been watching for a while but never got a chance to play with in more than sample applications. For some external reasons I&#8217;ve been forced to use [MySQL][3] as a database server in this project.</p> 
+In the last project I have been working i finally got a chance to design and implement a solution based on [NServiceBus][1] and [NHibernate][2], two tools I’ve been watching for a while but never got a chance to play with in more than sample applications. For some external reasons I've been forced to use [MySQL][3] as a database server in this project.</p> 
 
 <!--more-->
 
 So basically I’m using [NServiceBus][1] to provide reliable communication between the involved components and NHibernate to do the persistence of the domain objects used by the components. Up to this point the hole design of the solution looks good, with minimal effort i have reliable, fault tolerant services that are ready to do their job.
 
-Now i start implementing the details and get to the point where MySQL comes into play. I must say, it has surprised me… both ways.
+Now i start implementing the details and get to the point where MySQL comes into play. I must say, it has surprised me... both ways.
 
 The good thing is that after careful tuning, where my previous UNIX experience had a very important role, the database is able to handle the amounts of data that i plan to throw at it. Also it surprised me that some pretty complex queries run a lot faster than expected.
 
-Then the bad things started to show up. The hardest to debug was that updating an index column from multiple parallel transactions causes deadlocks witch cause transactions to be aborted. Of course this only happens at high loads. It was not hard to avoid this after i found out what the problem was … but still after this i had a feeling of working with something that might not be as reliable as expected.
+Then the bad things started to show up. The hardest to debug was that updating an index column from multiple parallel transactions causes deadlocks witch cause transactions to be aborted. Of course this only happens at high loads. It was not hard to avoid this after i found out what the problem was ... but still after this i had a feeling of working with something that might not be as reliable as expected.
 
 After that the [MySQL .NET connector][4] dropped the bomb on me: [Distributed Transactions are not supported][5]. Ok, they are not supported but why the hell does the connector throws an exception when used in a distributed transaction? I can understand that i can’t rely on the MySQL transaction being enlisted in the Distributed Transaction (DT) and that i have to handle that myself but not being able to use the connector AT ALL under a DT was unexpected. At this point i see only one solution: [grab the source][6] for the connector and modify the part that checks if a DT is present and just ignore it. Turns out this was very easy to do. If anyone is interested in this change in the connector i can provide more details.
 

@@ -53,7 +53,7 @@ Creating a wrapper over QHttp that can perform GET and POST requests in a synchr
 
 ## Solution
 
-In Qt4 QHttp can perform HTTP requests, but the API only allows asynchronous requests. This means that you need to specify a set of slots to handle the signals that can be emitted while the request if performed. Now don&#8217;t get me wrong, this is event driven programming and most of the times is the right way to go especially when writing a Qt based application.  The cases when event driven operations prove difficult to use are rare and usually can be programmed using events.
+In Qt4 QHttp can perform HTTP requests, but the API only allows asynchronous requests. This means that you need to specify a set of slots to handle the signals that can be emitted while the request if performed. Now don't get me wrong, this is event driven programming and most of the times is the right way to go especially when writing a Qt based application.  The cases when event driven operations prove difficult to use are rare and usually can be programmed using events.
 
 Recently I’ve developed a small application that had to do a number of requests in a specified order and show a message if an error was to occur. The algorithm was simple:
 
@@ -431,7 +431,7 @@ Now we need to implement the methods for *syncGet* and *syncPost* to mimic the *
   </ol>
 </div>
 
-The *syncGet* and *syncPost* functions both use the same strategy. They connect the *requestFinished* signal from QHttp to a *finished* slot, they ask the QHttp object to perform the request. The QHttp&#8217;s get/post method returns immediately with the request id that has been assigned to the current request. Now the nice part: After asking the QHttp object to perform the request we need to wait for it to finish, so we create an event loop and start it. The main event loop is now blocked and we are nor risking being called aging while executing the request. The blocking code is not using tricks like sleep or infinite loops so we don&#8217;t end up using 100% CPU or wasting time sleeping. Now we just need to implement the *finished* slot to save the result and exit the loop:
+The *syncGet* and *syncPost* functions both use the same strategy. They connect the *requestFinished* signal from QHttp to a *finished* slot, they ask the QHttp object to perform the request. The QHttp's get/post method returns immediately with the request id that has been assigned to the current request. Now the nice part: After asking the QHttp object to perform the request we need to wait for it to finish, so we create an event loop and start it. The main event loop is now blocked and we are nor risking being called aging while executing the request. The blocking code is not using tricks like sleep or infinite loops so we don't end up using 100% CPU or wasting time sleeping. Now we just need to implement the *finished* slot to save the result and exit the loop:
 
 <div class="dean_ch" style="white-space: wrap;">
   <ol>
@@ -455,7 +455,7 @@ The *syncGet* and *syncPost* functions both use the same strategy. They connect 
     
     <li class="li1">
       <div class="de1">
-        <span class="co1">/// check to see if it&#8217;s the request we made</span>
+        <span class="co1">/// check to see if it's the request we made</span>
       </div>
     </li>
     
@@ -503,11 +503,11 @@ The *syncGet* and *syncPost* functions both use the same strategy. They connect 
   </ol>
 </div>
 
-Now this slot first checks to see if it&#8217;s being called for our request and returns if not, after that saves the error status returned by the QHttp object and exits the loop. The execution now will return in the *syncGet/syncPost* function that will return the status to the caller.
+Now this slot first checks to see if it's being called for our request and returns if not, after that saves the error status returned by the QHttp object and exits the loop. The execution now will return in the *syncGet/syncPost* function that will return the status to the caller.
 
 ## Testing
 
-Ok, let&#8217;s write a small test application. Writing real automated test cases for this kind of class is possible but not trivial so will just write a small test app.
+Ok, let's write a small test application. Writing real automated test cases for this kind of class is possible but not trivial so will just write a small test app.
 
 <div class="dean_ch" style="white-space: wrap;">
   <ol>
@@ -667,7 +667,7 @@ Ok, let&#8217;s write a small test application. Writing real automated test case
   </ol>
 </div>
 
-Now in conclusion i would like to say that i recommend using this class only when you simply need to perform a request and know if it was successful or not. On any other case, where you need to do more complicated things learn to use Qt&#8217;s event driven programming model.
+Now in conclusion i would like to say that i recommend using this class only when you simply need to perform a request and know if it was successful or not. On any other case, where you need to do more complicated things learn to use Qt's event driven programming model.
 
 Download <a title="Source File for SyncHTTP" rel="nofollow" href="http://www.erata.net/wp-content/uploads/File/synchttp.h">synchttp.h</a>
 

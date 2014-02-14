@@ -15,4 +15,4 @@ tags:
   - version
   - wordpress
 ---
-I&#8217;ve updated wordpress to the latest stable version and all the plugins seem to work ok.
+I've updated wordpress to the latest stable version and all the plugins seem to work ok.

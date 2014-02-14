@@ -34,7 +34,7 @@ tags:
   - unix
   - windows
 ---
-I&#8217;ve just received this error with qmake on windows. Googling for it showed no results so after i&#8217;ve solved the problem i decided to put it here.  
+I've just received this error with qmake on windows. Googling for it showed no results so after i've solved the problem i decided to put it here.  
 <!--more-->
 
 The error was near a conditional block like:
@@ -85,7 +85,7 @@ The error was near a conditional block like:
   </ol>
 </div>
 
-&#8230;after searching for unclosed/missing braces for a while without any result and comparing svn versions i&#8217;ve finally found the problem. On the QMAKE_UIC linke instead of &#8220;+=&#8221; somehow ( probably kdevelop&#8217;s qmake parser/generator ) got saved as &#8220;+ =&#8221; (notice the space). The problem would have been much easier to solve if the error message wasn&#8217;t so misleading. 
+...after searching for unclosed/missing braces for a while without any result and comparing svn versions i've finally found the problem. On the QMAKE_UIC linke instead of "+=" somehow ( probably kdevelop's qmake parser/generator ) got saved as "+ =" (notice the space). The problem would have been much easier to solve if the error message wasn't so misleading. 
 
 <div class="dean_ch" style="white-space: wrap;">
   <ol>
@@ -127,4 +127,4 @@ The error was near a conditional block like:
   </ol>
 </div>
 
-So if you see this error look for operators that might have a space inserted in the middle. Hope this will save somebody&#8217;s time.
+So if you see this error look for operators that might have a space inserted in the middle. Hope this will save somebody's time.

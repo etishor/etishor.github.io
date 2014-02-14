@@ -41,11 +41,11 @@ Make a recent flash player plugin work in firefox on FreeBSD 6.
 
 There is a new [article][1] on enabling the linux-flash7 plugin with native browsers.
 
-With the release of FreeBSD 6.2 and the update on linuxpluginwrapper this tutorial has become obsolete. It&#8217;s only recommended if you need to stick with an older version of freebsd and/or flashplugin.
+With the release of FreeBSD 6.2 and the update on linuxpluginwrapper this tutorial has become obsolete. It's only recommended if you need to stick with an older version of freebsd and/or flashplugin.
 
 ## Solution
 
-First thing to do is get [this][2] patch for /usr/src/libexec/rtld-elf/rtld.c, copy it in /usr/src and do the following: (you must have the source tree in /usr/src and the version of the sources must be the same with the version of the installed world, if they are different or you are not sure it&#8217;s probably best to rebuild your world ( FreeBSD world that is <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> ) and kernel )
+First thing to do is get [this][2] patch for /usr/src/libexec/rtld-elf/rtld.c, copy it in /usr/src and do the following: (you must have the source tree in /usr/src and the version of the sources must be the same with the version of the installed world, if they are different or you are not sure it's probably best to rebuild your world ( FreeBSD world that is <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> ) and kernel )
 
 <div class="dean_ch" style="white-space: wrap;">
   <ol>

@@ -61,7 +61,7 @@ To create a quick and dirty widget from myWeather wordpress plugin just add the 
     
     <li class="li1">
       <div class="de1">
-        &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span> !<a href="http://www.php.net/function_exists"><span class="kw3">function_exists</span></a><span class="br0">&#40;</span><span class="st0">&#8216;register_sidebar_widget&#8217;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
+        &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span> !<a href="http://www.php.net/function_exists"><span class="kw3">function_exists</span></a><span class="br0">&#40;</span><span class="st0">&#8216;register_sidebar_widget'</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
       </div>
     </li>
     
@@ -73,7 +73,7 @@ To create a quick and dirty widget from myWeather wordpress plugin just add the 
     
     <li class="li1">
       <div class="de1">
-        &nbsp; &nbsp; register_sidebar_widget<span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&#8216;Weather&#8217;</span>, <span class="st0">&#8216;widgets&#8217;</span><span class="br0">&#41;</span>, <span class="st0">&#8216;widget_weather&#8217;</span><span class="br0">&#41;</span>; &nbsp; &nbsp;
+        &nbsp; &nbsp; register_sidebar_widget<span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&#8216;Weather'</span>, <span class="st0">&#8216;widgets'</span><span class="br0">&#41;</span>, <span class="st0">&#8216;widget_weather'</span><span class="br0">&#41;</span>; &nbsp; &nbsp;
       </div>
     </li>
     
@@ -139,7 +139,7 @@ To create a quick and dirty widget from myWeather wordpress plugin just add the 
     
     <li class="li1">
       <div class="de1">
-        add_action<span class="br0">&#40;</span><span class="st0">&#8216;widgets_init&#8217;</span>, <span class="st0">&#8216;widget_weather_init&#8217;</span><span class="br0">&#41;</span>;
+        add_action<span class="br0">&#40;</span><span class="st0">&#8216;widgets_init'</span>, <span class="st0">&#8216;widget_weather_init'</span><span class="br0">&#41;</span>;
       </div>
     </li>
     
@@ -151,9 +151,9 @@ To create a quick and dirty widget from myWeather wordpress plugin just add the 
   </ol>
 </div>
 
-Also the part where you search for the city could be added as a control for the widget but i didn&#8217;t relay need it to be .
+Also the part where you search for the city could be added as a control for the widget but i didn't relay need it to be .
 
-MyWeather plugin&#8217;s [homepage][1].
+MyWeather plugin's [homepage][1].
 
 # <a id="update">Update</a>
 
@@ -175,19 +175,19 @@ If you have multiple users with different credentials on your blog and you are t
     
     <li class="li1">
       <div class="de1">
-        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><a href="http://www.php.net/function_exists"><span class="kw3">function_exists</span></a><span class="br0">&#40;</span><span class="st0">&#8216;add_submenu_page&#8217;</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><a href="http://www.php.net/function_exists"><span class="kw3">function_exists</span></a><span class="br0">&#40;</span><span class="st0">&#8216;add_submenu_page'</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
       </div>
     </li>
     
     <li class="li1">
       <div class="de1">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; add_submenu_page<span class="br0">&#40;</span><span class="st0">&#8216;options-general.php&#8217;</span>, <span class="st0">&#8216;myWeather&#8217;</span>,
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; add_submenu_page<span class="br0">&#40;</span><span class="st0">&#8216;options-general.php'</span>, <span class="st0">&#8216;myWeather'</span>,
       </div>
     </li>
     
     <li class="li2">
       <div class="de2">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="st0">&#8216;myWeather&#8217;</span>, <span class="nu0">10</span>, <a href="http://www.php.net/basename"><span class="kw3">basename</span></a><span class="br0">&#40;</span><span class="kw2">__FILE__</span><span class="br0">&#41;</span>,<span class="st0">&#8216;myweather_admin&#8217;</span><span class="br0">&#41;</span>;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="st0">&#8216;myWeather'</span>, <span class="nu0">10</span>, <a href="http://www.php.net/basename"><span class="kw3">basename</span></a><span class="br0">&#40;</span><span class="kw2">__FILE__</span><span class="br0">&#41;</span>,<span class="st0">&#8216;myweather_admin'</span><span class="br0">&#41;</span>;
       </div>
     </li>
     

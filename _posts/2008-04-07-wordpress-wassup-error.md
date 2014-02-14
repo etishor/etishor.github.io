@@ -32,11 +32,11 @@ tags:
   - wassup
   - wordpress
 ---
-I&#8217;ve upgraded the wassup plugin to the latest version ( 1.5 ) and an error started to show in the pages:
+I've upgraded the wassup plugin to the latest version ( 1.5 ) and an error started to show in the pages:
 
 [ wp\_wassup\_tmp' doesn't exist ]
 
-The solution is to deactivate the plugin and then reactivate it&#8230; witch should be the right way to upgrade your plugins.<!--more-->
+The solution is to deactivate the plugin and then reactivate it... witch should be the right way to upgrade your plugins.<!--more-->
 
 **Update:**
 
@@ -55,7 +55,7 @@ It seems that the errore comes from a debug query that was left in the wassupDas
     
     <li class="li1">
       <div class="de1">
-        <span class="co1">// This is the function to print out a chart&#8217;s preview in the dashboard</span>
+        <span class="co1">// This is the function to print out a chart's preview in the dashboard</span>
       </div>
     </li>
     
@@ -103,9 +103,9 @@ It seems that the errore comes from a debug query that was left in the wassupDas
   </ol>
 </div>
 
-//$itemstot = $Chart->calc_tot(&#8220;count&#8221;, $search, null, &#8220;DISTINCT&#8221;);  
+//$itemstot = $Chart->calc_tot("count", $search, null, "DISTINCT");  
 //print $itemstot;
 
-echo &#8216;<h3>WassUp Stats <cite><a href=&#8221;admin.php?page=wassup&#8221;>More »</a></cite></h3>&#8217;;  
-echo $Chart->TheChart(1, &#8220;400&#8243;, &#8220;125&#8243;, &#8220;&#8221;, $wassup\_options->wassup\_chart_type, &#8220;bg,s,00000000&#8243;, &#8220;dashboard&#8221;, &#8220;left&#8221;);  
+echo &#8216;<h3>WassUp Stats <cite><a href="admin.php?page=wassup">More »</a></cite></h3>';  
+echo $Chart->TheChart(1, "400&#8243;, "125&#8243;, "", $wassup\_options->wassup\_chart_type, "bg,s,00000000&#8243;, "dashboard", "left");  
 } //end function wassupDashChart

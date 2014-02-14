@@ -23,7 +23,7 @@ tags:
 ---
 Finaly [wordpress 2.9 is out][1]. As usual the upgrade went smoothly without any problems. Also there seems to be no compatibility issues with the plugins, at least the ones i have installed. 
 
-I have to admit, i&#8217;m not a big fan of php, and php apps in general, but i admire the great work the wordpress team does. I haven&#8217;t tried any .net based blog app but i see no reason to at the moment. 
+I have to admit, i'm not a big fan of php, and php apps in general, but i admire the great work the wordpress team does. I haven't tried any .net based blog app but i see no reason to at the moment. 
 
 Enjoy, and if you see any issue with this blog, please drop me a line.
 

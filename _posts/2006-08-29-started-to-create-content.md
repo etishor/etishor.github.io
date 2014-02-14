@@ -19,4 +19,4 @@ tags:
   - constructive suggestions
   - content
 ---
-Being at the beginning it&#8217;s pretty difficult to create all the content &#8230; so (constructive) suggestions, opinions, contributions are not considered an affront <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" />
+Being at the beginning it's pretty difficult to create all the content ... so (constructive) suggestions, opinions, contributions are not considered an affront <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" />

@@ -14,4 +14,4 @@ tags:
   - plus one
   - site
 ---
-I&#8217;ve added the Google Plus one service to this site. If you like and find useful the articles on this website please recommend it by using the +1 Button.
+I've added the Google Plus one service to this site. If you like and find useful the articles on this website please recommend it by using the +1 Button.

@@ -42,7 +42,7 @@ tags:
   - transactions
   - type
 ---
-The new ADO.NET 2.0 and it&#8217;s typed datasets and table adapters are very useful tools for creating a DAL in you application. Still when working with SQLServer 2000 implementing transactions is a bit tricky. <!--more--> You can use TransactionScope but is seems to be designed for SQLServer 2005 as it will promote all transactions to distributed on SQLServer 2000 witch is a performance problem but also a bigger problem if your hosting provider does not provide distributed transactions. I&#8217;ve found a few solutions on the net some using reflection some using partial classes to add a method to the table adapter. Since i don&#8217;t like using reflection unless i absolutely have to I&#8217;ve come up with a solution using partial classes but trying to minimize the code you have to write for each table adapter and also trying to make is less error prone.
+The new ADO.NET 2.0 and it's typed datasets and table adapters are very useful tools for creating a DAL in you application. Still when working with SQLServer 2000 implementing transactions is a bit tricky. <!--more--> You can use TransactionScope but is seems to be designed for SQLServer 2005 as it will promote all transactions to distributed on SQLServer 2000 witch is a performance problem but also a bigger problem if your hosting provider does not provide distributed transactions. I've found a few solutions on the net some using reflection some using partial classes to add a method to the table adapter. Since i don't like using reflection unless i absolutely have to I've come up with a solution using partial classes but trying to minimize the code you have to write for each table adapter and also trying to make is less error prone.
 
   
 First we define an interface witch the table adapters will implement:
@@ -309,7 +309,7 @@ As you can see the code needed for each table adapter is minimal and only requir
     
     <li class="li1">
       <div class="de1">
-        &#8230;.
+        ....
       </div>
     </li>
     
@@ -345,7 +345,7 @@ As you can see the code needed for each table adapter is minimal and only requir
     
     <li class="li1">
       <div class="de1">
-        &#8230;. <span class="me1">operations</span> with adapter &#8230;.
+        .... <span class="me1">operations</span> with adapter ....
       </div>
     </li>
     
@@ -375,7 +375,7 @@ As you can see the code needed for each table adapter is minimal and only requir
     
     <li class="li1">
       <div class="de1">
-        &#8230;. <span class="me1">operations</span> with adapter &#8230;.
+        .... <span class="me1">operations</span> with adapter ....
       </div>
     </li>
     
@@ -417,7 +417,7 @@ As you can see the code needed for each table adapter is minimal and only requir
     
     <li class="li2">
       <div class="de2">
-        &#8230;<span class="me1">handle</span> error&#8230;.
+        ...<span class="me1">handle</span> error....
       </div>
     </li>
     

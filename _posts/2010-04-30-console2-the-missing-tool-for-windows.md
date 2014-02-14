@@ -16,7 +16,7 @@ tags:
   - tool
   - windows
 ---
-I finally found it!!! It&#8217;s been years since i was looking for it and now thanks to [Rob Conery&#8217;s post][1] i&#8217;ve found Console2.
+I finally found it!!! It's been years since i was looking for it and now thanks to [Rob Conery's post][1] i've found Console2.
 
 Get it [here][2]
 
