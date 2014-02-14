@@ -21,7 +21,8 @@ Basically this utility should construct the instance of an object using a public
 
 Sample usage:
 
-<pre class="brush:csharp">class Sample
+{% highlight c# linenos %}
+class Sample
 {
 	private readonly int intValue;
 	private readonly string stringValue;
@@ -61,7 +62,8 @@ public void Catalog_Can_Create_Using_Consutrctor()
 	Assert.IsNotNull(sample.PrivateString);
 	Assert.IsNotNull(sample.StringProp);
 	Assert.AreNotEqual(DateTime.MinValue, sample.DateProp);
-}</pre>
+}
+{% endhighlight %}
 
 For more samples see [unit tests][2].  
 I'll try to add more cases ( abstract class, interface implementation discovery ) in the future. You are welcome to submit sample classes, preferably as unit tests.

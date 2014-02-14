@@ -73,7 +73,8 @@ When designing an object that is meant to be used as a message, event or command
 
 I say i prefer the first choice since i find it the one that expresses my intentions the best. I want immutable data transfer objects. Also i have to mention that the first time i've seen this approach was in a [video by Greg Young][12] about event sourcing and CQRS architecture. To get the idea an event it's defined like this:
 
-<pre class="brush:csharp">public class PersonCreated
+{% highlight c# linenos %}
+public class PersonCreated
 {
     public readonly Guid AggregateId;
     public readonly string Name;
@@ -87,7 +88,8 @@ I say i prefer the first choice since i find it the one that expresses my intent
         this.Street = street;
         this.StreetNumber = streetNumber;
     }
-}</pre>
+}
+{% endhighlight %}
 
 &nbsp;
 
