@@ -56,16 +56,16 @@ The first approach was something similar to what [Andreas Öhlund describes in t
 
 My solution was to use a base abstract class for the massage handlers. So instead of just implementing IMessageHandler<T> now i derive from this base class. The code below should speak for itself:
 
-<pre class="csharpcode"><span class="rem">/// &lt;summary&gt;</span>
+<pre class="csharpcode"><span class="rem">/// <summary></span>
 <span class="rem">/// Base class for message handlers.</span>
 <span class="rem">/// Manages the unit of work required for handling the message.</span>
-<span class="rem">/// &lt;/summary&gt;</span>
-<span class="kwrd">public</span> <span class="kwrd">abstract</span> <span class="kwrd">class</span> MessageHandler&lt;T&gt; : IMessageHandler&lt;T&gt;
+<span class="rem">/// </summary></span>
+<span class="kwrd">public</span> <span class="kwrd">abstract</span> <span class="kwrd">class</span> MessageHandler<T> : IMessageHandler<T>
           <span class="kwrd">where</span> T : IMessage
 {
-    <span class="rem">/// &lt;summary&gt;</span>
+    <span class="rem">/// <summary></span>
     <span class="rem">/// The injected unit of work implementation.</span>
-    <span class="rem">/// &lt;/summary&gt;</span>
+    <span class="rem">/// </summary></span>
     <span class="kwrd">private</span> <span class="kwrd">readonly</span> IUnitOfWork unitOfWork;
 
     <span class="kwrd">public</span> MessageHandler(IUnitOfWork unitOfWork)
@@ -73,9 +73,9 @@ My solution was to use a base abstract class for the massage handlers. So instea
         <span class="kwrd">this</span>.unitOfWork = unitOfWork;
     }
 
-    <span class="rem">/// &lt;summary&gt;</span>
+    <span class="rem">/// <summary></span>
     <span class="rem">/// Concrete handlers must implement this method.</span>
-    <span class="rem">/// &lt;/summary&gt;</span>
+    <span class="rem">/// </summary></span>
     <span class="kwrd">public</span> <span class="kwrd">abstract</span> <span class="kwrd">void</span> HandleMessage(T message);
 
     <span class="kwrd">public</span> <span class="kwrd">void</span> Handle(T message)

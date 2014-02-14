@@ -37,178 +37,37 @@ tags:
 ---
 To create a quick and dirty widget from myWeather wordpress plugin just add the following to the end of myweather.php
 
-<!--more-->
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw2">function</span> widget_weather_init<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span> !<a href="http://www.php.net/function_exists"><span class="kw3">function_exists</span></a><span class="br0">&#40;</span><span class="st0">&#8216;register_sidebar_widget'</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">return</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; register_sidebar_widget<span class="br0">&#40;</span><a href="http://www.php.net/array"><span class="kw3">array</span></a><span class="br0">&#40;</span><span class="st0">&#8216;Weather'</span>, <span class="st0">&#8216;widgets'</span><span class="br0">&#41;</span>, <span class="st0">&#8216;widget_weather'</span><span class="br0">&#41;</span>; &nbsp; &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw2">function</span> widget_weather<span class="br0">&#40;</span><span class="re0">$args</span><span class="br0">&#41;</span>
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        <span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <a href="http://www.php.net/extract"><span class="kw3">extract</span></a><span class="br0">&#40;</span><span class="re0">$args</span><span class="br0">&#41;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="re0">$before_widget</span> . <span class="re0">$before_title</span> . <span class="re0">$title</span> . <span class="re0">$after_title</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; wp_myweather<span class="br0">&#40;</span><span class="br0">&#41;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <a href="http://www.php.net/echo"><span class="kw3">echo</span></a> <span class="re0">$after_widget</span>;
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        add_action<span class="br0">&#40;</span><span class="st0">&#8216;widgets_init'</span>, <span class="st0">&#8216;widget_weather_init'</span><span class="br0">&#41;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight php linenos %}
+function widget_weather_init(){
+  if ( !function_exists('register_sidebar_widget') )
+    return;
+  register_sidebar_widget(array('Weather', 'widgets'), 'widget_weather');
+}
+
+function widget_weather($args){
+  extract($args);
+  echo $before_widget . $before_title . $title . $after_title;
+  wp_myweather();
+  echo $after_widget;
+}
+
+add_action('widgets_init', 'widget_weather_init');
+{% endhighlight %}
 
 Also the part where you search for the city could be added as a control for the widget but i didn't relay need it to be .
 
-MyWeather plugin's [homepage][1].
+MyWeather plugin's <a title="MyWeather" href="http://www.thedeveloperinside.com/blog/myweather-20-released/">homepage</a>.
 
-# <a id="update">Update</a>
+### Update
 
-If you have multiple users with different credentials on your blog and you are the only administrator you can restrict the access to myWeather plugin administration interface by changing the function *myweather\_to\_admin()* to look like this (use 10 instead of 1 for required level) :
+If you have multiple users with different credentials on your blog and you are the only administrator you can restrict the access to myWeather plugin administration interface by changing the function <em>myweather_to_admin()</em> to look like this (use 10 instead of 1 for required level) :
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw2">function</span> myweather_to_admin<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">&#40;</span><a href="http://www.php.net/function_exists"><span class="kw3">function_exists</span></a><span class="br0">&#40;</span><span class="st0">&#8216;add_submenu_page'</span><span class="br0">&#41;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; add_submenu_page<span class="br0">&#40;</span><span class="st0">&#8216;options-general.php'</span>, <span class="st0">&#8216;myWeather'</span>,
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="st0">&#8216;myWeather'</span>, <span class="nu0">10</span>, <a href="http://www.php.net/basename"><span class="kw3">basename</span></a><span class="br0">&#40;</span><span class="kw2">__FILE__</span><span class="br0">&#41;</span>,<span class="st0">&#8216;myweather_admin'</span><span class="br0">&#41;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
-
- [1]: http://www.thedeveloperinside.com/blog/myweather-20-released/ "MyWeather"
+{% highlight php linenos %}
+function myweather_to_admin() {
+  if (function_exists('add_submenu_page')) {
+    add_submenu_page('options-general.php', 'myWeather',
+    'myWeather', 10, basename(__FILE__),'myweather_admin');
+  }
+}
+{% endhighlight %}

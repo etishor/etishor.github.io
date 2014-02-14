@@ -25,8 +25,8 @@ Example configuration can be found in the [test project][4].
   
 To use the cache provider add the following lines to the hnibernate configuration:
 
-<pre class="brush:xml">&lt;property name='cache.provider_class'&gt;Nhibernate.Caches.Membase.MembaseCacheProvider, Nhibernate.Caches.Membase&lt;/property&gt;
-&lt;property name='cache.use_second_level_cache'&gt;true&lt;/property&gt;</pre>
+<pre class="brush:xml"><property name='cache.provider_class'>Nhibernate.Caches.Membase.MembaseCacheProvider, Nhibernate.Caches.Membase</property>
+<property name='cache.use_second_level_cache'>true</property></pre>
 
 If you encounter any problems with it drop me a line.
 

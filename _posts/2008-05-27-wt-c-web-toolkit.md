@@ -33,7 +33,7 @@ tags:
   - web-app
   - xhtml
 ---
-[Wt][1] (pronounced &#8216;witty') is a C++ library and application server for developing and deploying web applications. It is not a &#8216;framework', which enforces a way of programming, but a library.<!--more-->
+[Wt][1] (pronounced 'witty') is a C++ library and application server for developing and deploying web applications. It is not a 'framework', which enforces a way of programming, but a library.<!--more-->
 
 I've found myself a new toy <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> . No more php or C# or ASP or other things i don't like to use but i have to use. I haven't yet started to use Wt, but looks nice. Like it or not the web-app is competing really well with the native-app, at least from the desktop user's point of view. It would be nice to have a way of writing web apps with things like type safety, generic code and most important reusing libraries like boost.
 

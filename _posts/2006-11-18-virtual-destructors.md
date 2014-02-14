@@ -60,117 +60,24 @@ These types of classes are complementary. Value types are concrete types that mi
 
 You **MUST** declare the destructor virtual **ONLY** if you are creating a polymorphic class witch has a **PUBLIC** destructor. That’s it. That’s the only case when you must declare the destructor virtual. If you don’t declare it virtual BAD THINGS will happen (destructors of child classes will not be called when deleting by base class).
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw4">struct</span> A <span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; ~A<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">cout</span> << <span class="st0">" calling ~A()"</span>;
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp; &nbsp; <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="br0">&#125;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw4">struct</span> B: <span class="kw2">public</span> A <span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; ~B<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw3">cout</span> << “~B<span class="br0">&#40;</span><span class="br0">&#41;</span>”;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="br0">&#125;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp; &nbsp; A* a = <span class="kw3">new</span> B;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="kw3">delete</span> a; <span class="co1">///In this case ~B() will not be called.</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight c++ linenos %}
+struct A { 
+  ~A(){
+    cout << " calling ~A()"; 
+  }
+};
+
+struct B: public A { 
+  ~B(){
+    cout << "~B()";
+  }
+};
+
+int main(){
+  A* a = new B;
+  delete a; ///In this case ~B() will not be called.
+} 
+{% endhighlight %}
 
 You **SHULD** (read **MUST**) **NOT** declare your destructor virtual in any other case. If you declare it virtual the biggest problem is someone using your class might think that your class is a polymorphic class that can be inherited from. If this happens the code will probably work but will be awkward and difficult to write and maintain. There is also a performance hit that comes with virtual destructors but unless you are writing something where every nanosecond counts you will not care about this hit.
 
@@ -178,75 +85,17 @@ Now what do you do if you find a nice class that is a value class (even if the a
 
 Use **FREE FUNCTIONS**. That’s it. Having free functions will not make your coding less Object Oriented. Free function will give you the same access level as inheriting from a value class as value classes don’t usually have protected methods. To avoid problems place the free functions in the same namespace as the class. As an example if you have a string class and want to have a method that will return the word count from the string: 
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw4">int</span> wordCount<span class="br0">&#40;</span> <span class="kw4">const</span> string& str <span class="br0">&#41;</span><span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="co1">///count the words</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="kw1">return</span> count;
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw4">void</span> doSomething<span class="br0">&#40;</span><span class="kw4">const</span> string& str<span class="br0">&#41;</span><span class="br0">&#123;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="co1">/// instead of str.wordCount() you will now have:</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="kw4">int</span> count = wordCount<span class="br0">&#40;</span>str<span class="br0">&#41;</span>;
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        <span class="br0">&#125;</span>
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight c++ linenos %}
+int wordCount( const string& str ){
+  ///count the words
+  return count;
+}
+
+void doSomething(const string& str){
+  /// instead of str.wordCount() you will now have:
+  int count = wordCount(str);
+}
+{% endhighlight %}
 
 There are lots of things to be said about class design. You should search for books written on the subject and learn about good ways of creating classes. The sad part is that until you are bitten by a bad design that you have to live with you most probably will not understand the importance of good design and coding style in general.
 

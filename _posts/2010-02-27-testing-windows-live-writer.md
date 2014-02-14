@@ -29,23 +29,23 @@ It’s not that writing posts in WordPress is hard, but i just have a feeling th
 Code snippet test
 
 <div class="csharpcode">
-  <pre><span class="lnum">   1:  </span><span class="rem">/// &lt;summary&gt;</span></pre>
+  <pre><span class="lnum">   1:  </span><span class="rem">/// <summary></span></pre>
   
-  <pre><span class="lnum">   2:  </span><span class="rem">/// Execute action &lt;paramref name="numberOfTimes"/&gt; times</span></pre>
+  <pre><span class="lnum">   2:  </span><span class="rem">/// Execute action <paramref name="numberOfTimes"/> times</span></pre>
   
-  <pre><span class="lnum">   3:  </span><span class="rem">/// &lt;/summary&gt;</span></pre>
+  <pre><span class="lnum">   3:  </span><span class="rem">/// </summary></span></pre>
   
-  <pre><span class="lnum">   4:  </span><span class="rem">/// &lt;param name="numberOfTimes"&gt;Number of times to execute action&lt;/param&gt;</span></pre>
+  <pre><span class="lnum">   4:  </span><span class="rem">/// <param name="numberOfTimes">Number of times to execute action</param></span></pre>
   
-  <pre><span class="lnum">   5:  </span><span class="rem">/// &lt;param name="action"&gt;Action to execute&lt;/param&gt;</span></pre>
+  <pre><span class="lnum">   5:  </span><span class="rem">/// <param name="action">Action to execute</param></span></pre>
   
-  <pre><span class="lnum">   6:  </span><span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">void</span> Times(<span class="kwrd">this</span> <span class="kwrd">int</span> numberOfTimes, Action&lt;<span class="kwrd">int</span>&gt; action)</pre>
+  <pre><span class="lnum">   6:  </span><span class="kwrd">public</span> <span class="kwrd">static</span> <span class="kwrd">void</span> Times(<span class="kwrd">this</span> <span class="kwrd">int</span> numberOfTimes, Action<<span class="kwrd">int</span>> action)</pre>
   
   <pre><span class="lnum">   7:  </span>{</pre>
   
   <pre><span class="lnum">   8:  </span>      Check.NotNull(action, <span class="str">"action"</span>);</pre>
   
-  <pre><span class="lnum">   9:  </span>      <span class="kwrd">for</span> (<span class="kwrd">int</span> i = 0; i &lt; numberOfTimes; i++)</pre>
+  <pre><span class="lnum">   9:  </span>      <span class="kwrd">for</span> (<span class="kwrd">int</span> i = 0; i < numberOfTimes; i++)</pre>
   
   <pre><span class="lnum">  10:  </span>          action(i);</pre>
   

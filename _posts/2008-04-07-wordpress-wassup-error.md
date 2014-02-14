@@ -54,16 +54,16 @@ It seems that the errore comes from a debug query that was left in the wassupDas
 // This is the function to print out a chart's preview in the dashboard
 function wassupDashChart() {
 global $wpdb;
-$table_name = $wpdb-&gt;prefix . "wassup";
+$table_name = $wpdb->prefix . "wassup";
 $to_date = wassup_get_time();
 $Chart = New MainItems;
-$Chart-&gt;tableName = $table_name;
-$Chart-&gt;to_date = $to_date;{% endhighlight %}
+$Chart->tableName = $table_name;
+$Chart->to_date = $to_date;{% endhighlight %}
 
-//$itemstot = $Chart-&gt;calc_tot("count", $search, null, "DISTINCT");
+//$itemstot = $Chart->calc_tot("count", $search, null, "DISTINCT");
 //print $itemstot;
 
-echo '&lt;h3&gt;WassUp Stats &lt;cite&gt;&lt;a href="admin.php?page=wassup"&gt;More »&lt;/a&gt;&lt;/cite&gt;&lt;/h3&gt;';
-echo $Chart-&gt;TheChart(1, "400", "125", "", $wassup_options-&gt;wassup_chart_type, "bg,s,00000000", "dashboard", "left");
+echo '<h3>WassUp Stats <cite><a href="admin.php?page=wassup">More »</a></cite></h3>';
+echo $Chart->TheChart(1, "400", "125", "", $wassup_options->wassup_chart_type, "bg,s,00000000", "dashboard", "left");
 } //end function wassupDashChart
 {% endhighlight %}

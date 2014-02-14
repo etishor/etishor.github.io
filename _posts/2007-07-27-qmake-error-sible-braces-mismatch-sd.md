@@ -18,7 +18,7 @@ ratings_average:
 dsq_thread_id:
   - 315344963
 categories:
-  - 'Qt &amp; boost'
+  - 'Qt & boost'
 tags:
   - block
   - braces

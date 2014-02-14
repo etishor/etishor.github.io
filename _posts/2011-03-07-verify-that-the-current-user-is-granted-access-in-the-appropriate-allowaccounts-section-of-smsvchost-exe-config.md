@@ -55,23 +55,23 @@ To resolve this problem:
 
 In the end you should have something like this:
 
-<pre class="brush:xml">&lt; ?xml version="1.0" encoding="utf-8"?>
+<pre class="brush:xml">< ?xml version="1.0" encoding="utf-8"?>
 <!-- The configuration file for SMSvcHost.exe -->
-&lt;configuration>
-    &lt;runtime>
-        &lt;gcconcurrent enabled="false" />
-    &lt;/runtime>
-    &lt;system .serviceModel>
-        &lt;diagnostics performanceCounters="Off" etwProviderId="{f18839f5-27ff-4e66-bd2d-639b768cf18b}"/>
-    &lt;/system>
-	&lt;system .serviceModel.activation>
-        &lt;net .tcp listenBacklog="10" maxPendingConnections="100" maxPendingAccepts="2" receiveTimeout="00:00:10" teredoEnabled="false">
-            &lt;allowaccounts>
-                &lt;add securityIdentifier="S-1-5-21-1754548885-2506776180-2303324228-4659"/>
-            &lt;/allowaccounts>
-        &lt;/net>
-    &lt;/system>
-&lt;/configuration>
+<configuration>
+    <runtime>
+        <gcconcurrent enabled="false" />
+    </runtime>
+    <system .serviceModel>
+        <diagnostics performanceCounters="Off" etwProviderId="{f18839f5-27ff-4e66-bd2d-639b768cf18b}"/>
+    </system>
+	<system .serviceModel.activation>
+        <net .tcp listenBacklog="10" maxPendingConnections="100" maxPendingAccepts="2" receiveTimeout="00:00:10" teredoEnabled="false">
+            <allowaccounts>
+                <add securityIdentifier="S-1-5-21-1754548885-2506776180-2303324228-4659"/>
+            </allowaccounts>
+        </net>
+    </system>
+</configuration>
 </pre>
 
 Also you might need to [grant access][3] to the user to register as a listener for an url:

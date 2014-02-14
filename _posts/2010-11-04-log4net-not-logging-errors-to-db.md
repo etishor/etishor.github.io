@@ -36,10 +36,10 @@ In this project i use a mix of [NServiceBus][1] based windows services and WCF s
 
 The solution is simple after you figure out the problem. Just add <useTransactions value="false"/> in the configuration section for the ADONetAppender. Ex:
 
-<pre class="brush:xml">&lt;appender name="MySQLAppender" type="log4net.Appender.ADONetAppender"&gt;
-    &lt;usetransactions value="false"/&gt;
-    &lt;!-- rest of the configuration --&gt;
-&lt;/appender&gt;</pre>
+<pre class="brush:xml"><appender name="MySQLAppender" type="log4net.Appender.ADONetAppender">
+    <usetransactions value="false"/>
+    <!-- rest of the configuration -->
+</appender></pre>
 
  [1]: http://www.nservicebus.com "NServiceBus"
  [2]: http://martinfowler.com/eaaCatalog/unitOfWork.html "Unit Of Work"

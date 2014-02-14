@@ -1,5 +1,5 @@
 ---
-title: '[Update]Flash7 with native FreeBSD browsers'
+title: 'Flash7 with native FreeBSD browsers'
 author: Iulian Margarintescu
 layout: post
 permalink: /freebsd/updateflash7-with-native-freebsd-browsers/
@@ -42,7 +42,6 @@ tags:
 ---
 Finally the linux-flash7 plugin works with native firefox. If it's not working for you this may help.
 
-<!--more-->
 
 ## Update
 
@@ -51,45 +50,10 @@ post][1] may be more usefull. The if you still have problems you may try the tip
 
 ## Step By Step HOWTO
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        1. Use cvsup or portsnap to update your ports tree
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        2. install www/linuxpluginwrapper
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        3. copy libflashplayer.so and flashplayer.xpt from distfiles/flashplugin/7.0r68/install_flash_player_7_linux.tar.gz to /usr/local/lib/browser_plugins
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        4. Fireup firefox or opera and test
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+1. Use cvsup or portsnap to update your ports tree
+2. install www/linuxpluginwrapper
+3. copy libflashplayer.so and flashplayer.xpt from distfiles/flashplugin/7.0r68/install_flash_player_7_linux.tar.gz to /usr/local/lib/browser_plugins
+4. Fireup firefox or opera and test
 
 If in the future the dependency on the linux emulation layer is removed from linux-flash7 port it will be ok to install the port as you would normally do, but until then i prefer to manually unpack the two files instead of installing the hole linux-base port(s) witch is not needed anyway for the plugin to work.  
   
@@ -104,87 +68,21 @@ Here there are two things to try. (the first one is recommended)
 
 I've noticed that opera still has some trouble working with the plugin and as a fix I've done a small change to the linuxpluginwrapper port. In compat\_linux/linux\_ioctl.c I've changed the default switch branch from:
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw1">default</span>:
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; errno = ENOSYS;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; ret &nbsp; = <span class="nu0">-1</span>;
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp; &nbsp; dprintf<span class="br0">&#40;</span><span class="st0">"ioctl(fd=%d, request=%08X(on Linux), ...) = %d / ERRNO = %d"</span>, d, l_request, ret, errno<span class="br0">&#41;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; <span class="kw2">break</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight c linenos %}
+default:
+    errno = ENOSYS;
+    ret   = -1;
+    dprintf("ioctl(fd=%d, request=%08X(on Linux), ...) = %d / ERRNO = %d", d, l_request, ret, errno);
+    break;
+{% endhighlight %}
 
 to
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        <span class="kw1">default</span>:
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; &nbsp;ret= _ioctl<span class="br0">&#40;</span>d,l_request,va_arg<span class="br0">&#40;</span>ap,<span class="kw4">int</span>*<span class="br0">&#41;</span><span class="br0">&#41;</span>;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp; &nbsp; &nbsp;<span class="kw2">break</span>;
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight c linenos %}
+default:
+     ret= _ioctl(d,l_request,va_arg(ap,int*)); 
+     break; 
+{% endhighlight %}
 
 After this change the plugin works fine but sometimes you need to reload the page for opera to display the flash content.
 
