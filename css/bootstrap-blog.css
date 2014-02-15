@@ -221,3 +221,43 @@ h6, .h6 {
 .meta .tags:before { content: "\f02c" }
 .meta .comments:before { content: "\f075" }
 .meta .edit:before { content: "\f044" }
+
+#pagenavi {
+    padding: 20px 0;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #ddd;
+}
+#pagenavi a:hover { text-decoration: underline }
+#pagenavi .prev,
+#pagenavi .next { position: absolute }
+#pagenavi .prev {
+    padding-left: 30px;
+    left: 0;
+}
+#pagenavi .prev:before {
+    content: "\f060";
+    font: 1.3em FontAwesome;
+    position: absolute;
+    left: 0;
+}
+#pagenavi .next {
+    padding-right: 30px;
+    right: 0;
+}
+#pagenavi .next:before {
+    content: "\f061";
+    font: 1.3em FontAwesome;
+    position: absolute;
+    right: 0;
+}
+#pagenavi .center {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+@media screen and (max-width: 400px) { 
+    #pagenavi .center { display: none }
+}
