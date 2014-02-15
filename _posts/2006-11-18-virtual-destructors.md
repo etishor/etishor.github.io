@@ -3,12 +3,8 @@ title: Virtual Destructors
 author: Iulian Margarintescu
 layout: post
 permalink: /programming/virtual-destructors/
-autometa:
-  - 'destructor classes class declare virtual types coding polymorphic class-design method public   derived inherited inheritance'
-views:
-  - 3414
-dsq_thread_id:
-  - 306768848
+comments: true
+dsq_thread_id: '26 http://www.erata.net/weblog/programming/2006/11/18/virtual-destructors/'
 categories:
   - Programming
 tags:
@@ -40,7 +36,8 @@ tags:
 
 Recently I’ve been involved in a thread on qt-interest mailing list about virtual destructors. A few people there suggested that you should always make the destructor of your class virtual. I strongly disagree. 
 
-<!--more-->
+
+
 
 The argument was that if you use the virtual keyword on your destructor you will always be on the safe side. If someone inherits from your class and then deletes one of his instances of the class by a pointer to your base class you are sure his destructor gets called. So you are designing a class with value semantics (can be copied, can be assigned to) and you fear that someone will eventually inherit from your class so you make the destructor virtual. Well then why not make all the methods virtual so that if someone will inherit your class will have the possibility to customize its behavior. Is this starting to sound wrong? Well it should. 
 

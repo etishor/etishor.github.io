@@ -3,14 +3,8 @@ title: 'KDevelop - KDevTrollProject Problem'
 author: Iulian Margarintescu
 layout: post
 permalink: /freebsd/kdevelop-kdevtrollproject-problem/
-autometa:
-  - qmake_lex kdevelop x11r6 local deps libkdevqmakeparser qmake kdevtrollproject
-views:
-  - 1240
-head_meta:
-  - name="keywords" content=""
-dsq_thread_id:
-  - 306768882
+comments : true
+dsq_thread_id: 27 http://www.erata.net/weblog/freebsd/2007/03/17/kdevelop-kdevtrollproject-problem/
 categories:
   - FreeBSD
 tags:
@@ -31,7 +25,7 @@ tags:
   - symbol
   - undefined reference
 ---
-After updating kde to 3.5.6 and kdevelop to 3.4.0_1 ( around 15.03.2007 ) kdevelop failed to open qmake based projects. The error was "Error creating project management plugin KDevTrollProject".<!--more-->
+After updating kde to 3.5.6 and kdevelop to 3.4.0_1 ( around 15.03.2007 ) kdevelop failed to open qmake based projects. The error was "Error creating project management plugin KDevTrollProject".
 
 ## Update
 
@@ -45,63 +39,15 @@ It took me a few houers to find out that the problem was an undefined reference 
 
 Below are the command lines to build qmake_lex.cpp and relink libkdevqmakeparser.so
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #cd /usr/ports/devel/kdevelop
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #make extract patch configure
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #cd work/kdevelop-3.4.0/buildtools/lib/parsers/qmake
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        #fetch http://www.erata.net/wp-content/uploads/File/fix_lex.sh
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #cat fix_lex.sh &nbsp;( just to make sure i haven't hidden anything in that file <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> )
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #sh fix_lex.sh
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #cp .libs/libkdevqmakeparser.so.0 /usr/local/lib/
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight bash %}
+#cd /usr/ports/devel/kdevelop
+#make extract patch configure
+#cd work/kdevelop-3.4.0/buildtools/lib/parsers/qmake
+#fetch http://www.erata.net/wp-content/uploads/File/fix_lex.sh
+#cat fix_lex.sh ( just to make sure i haven't hidden anything in that file :) )
+#sh fix_lex.sh
+#cp .libs/libkdevqmakeparser.so.0 /usr/local/lib/
+{% endhighlight %}
 
 ## Conclusion
 

@@ -23,7 +23,7 @@ tags:
   - qt
   - what this means
 ---
-This is incredible news. No point in making this post longer ... who knows what this means understands why it's incredible. Who does not know what this means ... won't care anyhow <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> 
+This is incredible news. No point in making this post longer ... who knows what this means understands why it's incredible. Who does not know what this means ... won't care anyhow :)
 
 [http://www.qtsoftware.com/about/news/lgpl-license-option-added-to-qt][1]
 

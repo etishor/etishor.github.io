@@ -34,7 +34,7 @@ tags:
   - warning
   - Werror
 ---
-The intention of this article is to show a few useful ( i hope ) tips about using g++ in the every day development cycle. Also this article describes three build configurations that should help the developer catch bugs in the early stages of development.<!--more-->
+The intention of this article is to show a few useful ( i hope ) tips about using g++ in the every day development cycle. Also this article describes three build configurations that should help the developer catch bugs in the early stages of development.
 
 ## Debug Build
 
@@ -66,4 +66,4 @@ After changing something that affects ABI ( application binary interface ), like
 
 In conclusion you should listen to your compiler and remember that most of the time you are wrong and he is right.
 
- [1]: http://ccache.samba.org/ "ccache"
+[1]: http://ccache.samba.org/ "ccache"

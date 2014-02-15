@@ -55,30 +55,33 @@ To resolve this problem:
 
 In the end you should have something like this:
 
-<pre class="brush:xml">< ?xml version="1.0" encoding="utf-8"?>
+{% highlight xml linenos %}
+< ?xml version="1.0" encoding="utf-8"?>
 <!-- The configuration file for SMSvcHost.exe -->
 <configuration>
     <runtime>
         <gcconcurrent enabled="false" />
     </runtime>
-    <system .serviceModel>
+    <system.serviceModel>
         <diagnostics performanceCounters="Off" etwProviderId="{f18839f5-27ff-4e66-bd2d-639b768cf18b}"/>
-    </system>
-	<system .serviceModel.activation>
-        <net .tcp listenBacklog="10" maxPendingConnections="100" maxPendingAccepts="2" receiveTimeout="00:00:10" teredoEnabled="false">
+    </system.serviceModel>
+	<system.serviceModel.activation>
+        <net.tcp listenBacklog="10" maxPendingConnections="100" maxPendingAccepts="2" receiveTimeout="00:00:10" teredoEnabled="false">
             <allowaccounts>
                 <add securityIdentifier="S-1-5-21-1754548885-2506776180-2303324228-4659"/>
             </allowaccounts>
-        </net>
-    </system>
+        </net.tcp>
+    </system.serviceModel.activation>
 </configuration>
-</pre>
+{% endhighlight %}
 
 Also you might need to [grant access][3] to the user to register as a listener for an url:
 
+{% highlight text %}
 netsh http add urlacl url=http://+: <port>/MyUri user=DOMAIN\user
+{% endhighlight %}
 
-I have to admin the most of the time i've spent on this issue was because i was modifying the commented section in the the config xml. </port>
+I have to admin the most of the time i've spent on this issue was because i was modifying the commented section in the the config xml.
 
  [1]: http://technet.microsoft.com/en-us/sysinternals/bb897417 "PsGetSid"
  [2]: http://en.wikipedia.org/wiki/Security_Identifier "Security Identifier"

@@ -15,7 +15,11 @@ tags:
   - multi-database
   - RavenDb
 ---
-Just a quick hint for others like me, who spent some minutes searching for the EnsureDatabaseExists method when trying to use [RavenDb][1] with  Multi-Databases. EnsureDatabaseExists is an extension method on IDatabaseCommands defined in the Raven.Client.Extensions namespace. To make it work you need to add a using statement for this namespace.
+Just a quick hint for others like me, who spent some minutes searching for the EnsureDatabaseExists method when trying to use [RavenDb][1] with  Multi-Databases. 
+
+EnsureDatabaseExists is an extension method on IDatabaseCommands defined in the Raven.Client.Extensions namespace. 
+
+To make it work you need to add a using statement for this namespace.
 
 
 {% highlight c# linenos %}

@@ -23,7 +23,7 @@ Also for me one important gain from watching the videos was that now I can bette
 
 I highly recommend following all the videos on cleancoders.com. No matter if you are a junior dev or have lots of years of experience I'm sure you will gain a lot of knowledge from them. The videos are created in a non-conventional and funny way which makes them pretty entertaining to watch.
 
-Thank you Mr. Martin for the great videos.
+Thank you Uncle Bob for the great videos.
 
 Continue to [Clean Coders][1].
 

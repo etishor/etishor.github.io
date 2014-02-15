@@ -30,10 +30,9 @@ I’ve opened a [Github account][1] where i keep some stuff I've been playing wi
 
 I’ve created a [sample project][2] to demonstrate the concepts. Here is a short description of the sample:
 
-Sample project demonstrating CQRS & Event Sourcing   
-================================================= 
+### Sample project demonstrating CQRS & Event Sourcing   
 
-The sample uses the following projects from Jonathan Oliver (<https://github.com/joliver)>
+The sample uses the following projects from [Jonathan Oliver][3]
 
 * EventStore   
 * NanoServiceBus   
@@ -76,14 +75,14 @@ b. Read Side
         - infrastructure for wiring up the event handlers to NanoServiceBus   
         - this process needs to run for the read side to be updated. 
 
-c. Infrastructure   
+c. Infrastructure
+
     1. Sample.Messages   
         - definitions for commands and events that are handled or published by the Domain Model   
     2. Sample.Client.Web   
         - ASP.NET MVC3 application that demonstrates how to integrate the Write Side & the Read Side in an application. 
 
-TODO   
-==== 
+### TODO   
 
 - Add more complex objects to the domain   
 - Review transaction management on integration points   
@@ -91,13 +90,6 @@ TODO
 
 I’d be glad if other shared their comments on the code there.
 
-<div style="padding-bottom: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; float: none; padding-top: 0px" id="scid:C16BAC14-9A3D-4c50-9394-FBFEF7A93539:64aaa9f9-997c-4281-8427-c10bb319473a" class="wlWriterSmartContent">
-  <a href="http://www.dotnetkicks.com/kick/?url=http://www.erata.net/net/new-github-account/"><img src="http://www.dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://www.erata.net/net/new-github-account/" border="0" alt="kick it on DotNetKicks.com" /></a>
-</div>
-
-<div class="wlWriterHeaderFooter" style="margin:0px; padding:0px 0px 0px 0px;">
-  <p>
-    <br /> </div>
-
  [1]: https://github.com/etishor
  [2]: https://github.com/etishor/CQRSEventSourcingSample
+ [3]: https://github.com/joliver

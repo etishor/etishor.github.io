@@ -3,20 +3,7 @@ title: Web application security flows
 author: Iulian Margarintescu
 layout: post
 permalink: /security/web-application-security-flows/
-autometa:
-  - application category database server quot error input security vulnerability
-views:
-  - 783
-head_meta:
-  - name="keywords" content=""
-ratings_users:
-  - 0
-ratings_score:
-  - 0
-ratings_average:
-  - 0
-dsq_thread_id:
-  - 418204310
+comments: true
 categories:
   - Security
 tags:
@@ -44,42 +31,60 @@ tags:
   - WHERE
 ---
 Here goes... my first security related post :)
-<h3>Intro</h3>
+
+### Intro
+
 First i must say that this will not be a way to prove that your application is secure, it will only be a quick & dirty way of finding common bugs in web applications. The following will be a few techniques that i tend to use the first time i see an web application ( and generally a database application ). I will use PHP for the few code examples but the vulnerabilities presented are not limited to PHP, in fact are independent of the server-side programming language used.
 
+### Unexpected Input
 
-<h3>Unexpected Input</h3>
 The first and most common bug is unsanitized user input. The easy way to check for this error is to start replacing variables passed on the URL with characters that need to be escaped when used in an SQL query. Let's say the after submitting some data or clicking a link in the application you end up in a page like
 
-{% highlight text linenos %}http://www.example.com/products.php?category=1{% endhighlight %}
+{% highlight text %}
+http://www.example.com/products.php?category=1
+{% endhighlight %}
 
 In an vulnerable application this most probably generates a query like
 
-{% highlight php linenos %}$query='SELECT * FROM products WHERE category_id='.$_GET['category']{% endhighlight %}
+{% highlight php%}
+$query='SELECT * FROM products WHERE category_id='.$_GET['category']
+{% endhighlight %}
 
 Now changing the value of the category to a special SQL character is straightforward:
 
-{% highlight text linenos %} http://www.example.com/products.php?category='{% endhighlight %}
+{% highlight text %}
+http://www.example.com/products.php?category='
+{% endhighlight %}
 
 And if the assumption about how the variable is used is correct you will probably end up in a page containing an error message from the database server telling you that there was an error executing the query. Now the executed query looks like this:
 
-{% highlight sql linenos %}SELECT * FROM products WHERE category_id='{% endhighlight %}
+{% highlight sql%}
+SELECT * FROM products WHERE category_id='
+{% endhighlight %}
 
 Hmm... what next? Server said error, it was an error so what's the big deal? Very big deal. Now let's change the variable to something that actually does something.
 
-{% highlight text linenos %} http://www.example.com/products.php?category=1;drop table products;{% endhighlight %}
+{% highlight text %}
+http://www.example.com/products.php?category=1;drop table products;
+{% endhighlight %}
 
 witch will generate a query like
 
-{% highlight sql linenos %}SELECT * FROM products WHERE category_id=1;DROP TABLE products;{% endhighlight %}
+{% highlight sql%}
+SELECT * FROM products WHERE category_id=1;DROP TABLE products;
+{% endhighlight %}
 
 Is this big deal enough ? Or maybe something like:
 
-{% highlight text linenos %}http://www.example.com/products.php?category=1;insert into users values( null , 'x',password('x'),true );{% endhighlight %}
+{% highlight text %}
+http://www.example.com/products.php?category=1;insert into users values( null , 'x',password('x'),true );
+{% endhighlight %}
 
 assuming that there is a user system in the application and a table users ( user_id , user_name , user_password , is_admin ) the query will become:
 
-{% highlight sql linenos %}SELECT * FROM products WHERE category_id=1;insert into users values( null , 'x',password('x'),true );{% endhighlight %}
+{% highlight sql %}
+SELECT * FROM products WHERE category_id=1;insert into users values( null , 'x',password('x'),true );
+{% endhighlight %}
 
 which, if the assumptions are correct, will insert a new user x witch is admin.
 
@@ -93,4 +98,4 @@ I'll stop here for now, but just remember to change the URL every time you see a
 
 ... more to come soon ...
 
-<img src="http://imgs.xkcd.com/comics/exploits_of_a_mom.png" alt="Exploits of a mom" width="666" height="205" />
+![Exploits of a mom](http://imgs.xkcd.com/comics/exploits_of_a_mom.png)

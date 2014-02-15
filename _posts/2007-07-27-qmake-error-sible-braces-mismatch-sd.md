@@ -35,96 +35,26 @@ tags:
   - windows
 ---
 I've just received this error with qmake on windows. Googling for it showed no results so after i've solved the problem i decided to put it here.  
-<!--more-->
+
+
 
 The error was near a conditional block like:
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        unix{
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        }
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        win32{
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        &nbsp; QMAKE_UIC+ = -L ../bin/plugin
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        }
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight text linenos %}
+unix{
+}
+win32{
+  QMAKE_UIC+ = -L ../bin/plugin
+}
+{% endhighlight %}
 
 ...after searching for unclosed/missing braces for a while without any result and comparing svn versions i've finally found the problem. On the QMAKE_UIC linke instead of "+=" somehow ( probably kdevelop's qmake parser/generator ) got saved as "+ =" (notice the space). The problem would have been much easier to solve if the error message wasn't so misleading. 
 
-<div class="dean_ch" style="white-space: wrap;">
-  <ol>
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #bad version
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        QMAKE_UIC + = -L ../bin/plugin
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        #good version
-      </div>
-    </li>
-    
-    <li class="li2">
-      <div class="de2">
-        QMAKE_UIC += -L ../bin/plugin
-      </div>
-    </li>
-    
-    <li class="li1">
-      <div class="de1">
-        &nbsp;
-      </div>
-    </li>
-  </ol>
-</div>
+{% highlight text linenos %}
+#bad version
+QMAKE_UIC + = -L ../bin/plugin
+#good version
+QMAKE_UIC += -L ../bin/plugin
+{% endhighlight %}
 
 So if you see this error look for operators that might have a space inserted in the middle. Hope this will save somebody's time.

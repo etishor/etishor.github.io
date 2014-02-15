@@ -57,11 +57,11 @@ add_action('widgets_init', 'widget_weather_init');
 
 Also the part where you search for the city could be added as a control for the widget but i didn't relay need it to be .
 
-MyWeather plugin's <a title="MyWeather" href="http://www.thedeveloperinside.com/blog/myweather-20-released/">homepage</a>.
+MyWeather plugin's [homepage][1].
 
 ### Update
 
-If you have multiple users with different credentials on your blog and you are the only administrator you can restrict the access to myWeather plugin administration interface by changing the function <em>myweather_to_admin()</em> to look like this (use 10 instead of 1 for required level) :
+If you have multiple users with different credentials on your blog and you are the only administrator you can restrict the access to myWeather plugin administration interface by changing the function **myweather_to_admin()** to look like this (use 10 instead of 1 for required level) :
 
 {% highlight php linenos %}
 function myweather_to_admin() {
@@ -71,3 +71,5 @@ function myweather_to_admin() {
   }
 }
 {% endhighlight %}
+
+[1]: http://www.thedeveloperinside.com/blog/myweather-20-released/ "MyWeather"

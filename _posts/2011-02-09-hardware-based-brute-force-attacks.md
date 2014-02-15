@@ -32,6 +32,6 @@ I've found this image in a [PDF presentation document][1] and i feel like sharin
   </p>
 </div>
 
-Source: <http://www.tarsnap.com/scrypt/scrypt-slides.pdf> by Colin Percival
+Source: [scrypt-slides][1] by Colin Percival
 
- [1]: http://www.tarsnap.com/scrypt/scrypt-slides.pdf "scrypt: A new key derivation function"
+[1]: http://www.tarsnap.com/scrypt/scrypt-slides.pdf "scrypt: A new key derivation function"

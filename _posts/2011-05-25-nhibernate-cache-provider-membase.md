@@ -20,13 +20,13 @@ I've written a cache provider for [NHibernate][1] which uses [Membase][2] as a c
 You can find the souce code on [github][3].
 
 Example configuration can be found in the [test project][4].  
-<!--more-->
-
   
 To use the cache provider add the following lines to the hnibernate configuration:
 
-<pre class="brush:xml"><property name='cache.provider_class'>Nhibernate.Caches.Membase.MembaseCacheProvider, Nhibernate.Caches.Membase</property>
+{% highlight xml linenos %}
+<property name='cache.provider_class'>Nhibernate.Caches.Membase.MembaseCacheProvider, Nhibernate.Caches.Membase</property>
 <property name='cache.use_second_level_cache'>true</property></pre>
+{% endhighlight %}
 
 If you encounter any problems with it drop me a line.
 

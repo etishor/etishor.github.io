@@ -49,5 +49,24 @@ class Program
 
 And of course the [WebReqest ][2] class allows you to specify all the properties you would ever need for any request, and also allows you to perform request in an asynchronous maner. Now i don't think you can be more expressive than this. I like qt a lot... but i love c# now.
 
+### Update... 
+
+Or you can do this:
+
+{% highlight c# linenos %}
+using System;
+using System.Net;
+using System.IO;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var content = new WebClient().DownloadString("http://www.google.com");
+        Console.WriteLine(content);
+    }
+}
+{% endhighlight %}
+
  [1]: http://www.erata.net/qt-boost/synchronous-http-request/
  [2]: http://msdn.microsoft.com/en-us/library/system.net.webrequest_members.aspx
