@@ -20,8 +20,5 @@ tags:
   - unix
   - width
 ---
-<div id="attachment_84" style="width: 310px" class="wp-caption aligncenter">
-  <a href="http://www.erata.net/wp-content/uploads/2009/06/sandwich.png"><img class="size-medium wp-image-84" title="sandwich" src="http://www.erata.net/wp-content/uploads/2009/06/sandwich-300x249.png" alt="Sandwich" width="300" height="249" /></a><p class="wp-caption-text">
-    Sandwich
-  </p>
-</div>
+
+![The power of sudo](/images/sandwich.png "The power of sudo")

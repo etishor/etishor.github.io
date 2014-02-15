@@ -24,7 +24,7 @@ The hardware is not good - its 10 levels above good, it extraordinary, everythin
 
 Now comes the true surprise: Mac OS X 10.7.3 Lion - my first OS X system.
 
-<img style="display: block; margin-left: auto; margin-right: auto;" title="MaxOsX.png" src="http://www.erata.net/wp-content/uploads/2012/02/Mac-OS-XMaxOsX.png" alt="Mac OS X Lion" width="321" height="393" border="0" />
+![Mac OS X Lion](/images/Mac-OS-XMaxOsX.png "Mac OS X Lion")
 
 I don't even know where to begin - it took me less than a minute to make a screen shot of the above window ( command-shift-4, space, click window ) and drag it in the MarsEdit that i'm using to write this. I was writing an email in italian and i'm terrible at writing italian and i notice that iMail starts correcting my words in proper italian - without ever configuring anything related to italian. I was able to setup email accounts without any frustration, setup all IM accounts, twitter, vpn, RSS reader and everything i use daily without having to spend a lot of time google for it or trying to guess what it is that i'm supposed to do.
 

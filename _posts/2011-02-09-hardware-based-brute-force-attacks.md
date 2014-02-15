@@ -26,11 +26,7 @@ tags:
 ---
 I've found this image in a [PDF presentation document][1] and i feel like sharing:
 
-<div id="attachment_202" style="width: 458px" class="wp-caption aligncenter">
-  <a href="http://www.erata.net/wp-content/uploads/2011/02/hardware-crypto.png"><img class="size-full wp-image-202" title="Hardware Brute Force" src="http://www.erata.net/wp-content/uploads/2011/02/hardware-crypto.png" alt="Hardware Brute Force Attacks" width="448" height="274" /></a><p class="wp-caption-text">
-    Hardware-based brute force attacks
-  </p>
-</div>
+![Hardware-based brute force attacks](/images/hardware-crypto.png)
 
 Source: [scrypt-slides][1] by Colin Percival
 

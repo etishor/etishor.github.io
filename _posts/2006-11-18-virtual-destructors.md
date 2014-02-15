@@ -96,7 +96,7 @@ void doSomething(const string& str){
 
 There are lots of things to be said about class design. You should search for books written on the subject and learn about good ways of creating classes. The sad part is that until you are bitten by a bad design that you have to live with you most probably will not understand the importance of good design and coding style in general.
 
-In the end if you are an employer and want to quickly see if a candidate knows about virtual functions ask him what “static virtual functions” and “virtual constructors” have in common. ( if you don’t know the answer contact me <img src="http://www.erata.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /> ).
+In the end if you are an employer and want to quickly see if a candidate knows about virtual functions ask him what “static virtual functions” and “virtual constructors” have in common. (if you don’t know the answer contact me).
 
 ## Updates
 

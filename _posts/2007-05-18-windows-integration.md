@@ -27,8 +27,4 @@ tags:
 ---
 Here is a preview of what you can do if you have a windows machine somewhere.
 
-<div id="attachment_56" style="width: 310px" class="wp-caption aligncenter">
-  <a href="http://www.erata.net/wp-content/uploads/2009/02/mydesktop.png"><img class="size-medium wp-image-56" title="mydesktop" src="http://www.erata.net/wp-content/uploads/2009/02/mydesktop-300x225.png" alt="My Desktop" width="300" height="225" /></a><p class="wp-caption-text">
-    My Desktop
-  </p>
-</div>
+![My Desktop](/images/mydesktop.png "My Desktop")

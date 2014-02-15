@@ -22,12 +22,6 @@ A few weeks ago i've started using [Cassette][1], a very nice asset management t
 
 While working with it i had a few issues which I've  managed to solve and i would like to share them.
 
-<div id="attachment_288" style="width: 81px" class="wp-caption aligncenter">
-  <a href="http://getcassette.net/"><img class="size-full wp-image-288" title="Cassette" src="http://www.erata.net/wp-content/uploads/2011/08/casette.png" alt="Cassette" width="71" height="56" /></a><p class="wp-caption-text">
-    Cassette
-  </p>
-</div>
-
 ### File not found in module.txt
 
 The first problem was related to a .css file for the jquery-ui theme that was present in the ~Content/themes/redmond/jquery-ui.medsentry.css folders. My module.txt looked like this:

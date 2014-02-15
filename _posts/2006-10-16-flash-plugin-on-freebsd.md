@@ -77,5 +77,5 @@ libc.so.6 pluginwrapper/flash7.so
 
 Now open your browser and go to about:plugins. Flash 7 plugins is active.
 
- [1]: http://www.erata.net/weblog/freebsd/2007/03/18/updateflash7-with-native-freebsd-browsers/
- [2]: http://www.erata.net/wp-content/uploads/File/rtld_dlsym_hack.diff?phpMyAdmin=ZVVy4h18NWWYGtjd86mc4kQ%2COS6 "rtld dlsym hack"
+ [1]: http://www.erata.net/freebsd/updateflash7-with-native-freebsd-browsers/
+ [2]: https://gist.github.com/etishor/9019433 "rtld dlsym hack"

@@ -175,4 +175,4 @@ PS: this is my first programming HOWTO so be merciful :)
  [1]: http://opensource.org/licenses/bsd-license.php "BSD license"
  [2]: http://opensource.org/licenses/mit-license.php
  [3]: http://opensource.org/licenses/bsl1.0.html
- [4]: http://www.erata.net/wp-content/uploads/File/synchttp.h "Source File for SyncHTTP"
+ [4]: https://gist.github.com/etishor/9019410 "Source File for SyncHTTP"
