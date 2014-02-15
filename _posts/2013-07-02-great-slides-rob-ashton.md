@@ -2,8 +2,6 @@
 title: Great slides from Rob Ashton
 layout: post
 comments : true
-disqus_identifier:
-  - 1457870865
 category: Programming
 tags: [rob ashton,tdd,testing,unit tests]
 ---
