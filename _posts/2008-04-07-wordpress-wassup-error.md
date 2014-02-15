@@ -1,6 +1,5 @@
 ---
 title: WordPress WassUp Error
-author: Iulian Margarintescu
 excerpt: |
   I\'ve upgraded the wassup plugin to the latest version ( 1.5 ) and an error started to show in the pages:
   
@@ -13,24 +12,7 @@ views:
   - 10121
 dsq_thread_id:
   - 315338883
-categories:
-  - Programming
-tags:
-  - dashboard
-  - database error
-  - date
-  - error
-  - itemstot
-  - mysql
-  - 'null'
-  - page wassup
-  - PHP
-  - sql
-  - sql syntax
-  - syntax error
-  - time chart
-  - wassup
-  - wordpress
+category: Programming
 ---
 I've upgraded the wassup plugin to the latest version ( 1.5 ) and an error started to show in the pages:
 

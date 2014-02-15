@@ -1,30 +1,12 @@
 ---
 title: I gave up on Coppermine Gallery
-author: Iulian Margarintescu
 layout: post
 permalink: /security/i-gave-up-on-coppermine-gallery/
 views:
   - 439
 dsq_thread_id:
   - 306768943
-categories:
-  - Security
-tags:
-  - coppermine
-  - Coppermine Photo Gallery
-  - desktop application
-  - gallery
-  - number
-  - peer reviews
-  - pice
-  - safe alternatives
-  - Security
-  - stone
-  - today
-  - vulnerability
-  - web gallery
-  - web gallery needs
-  - wordpress
+category: Security
 ---
 I used to use [Coppermine Photo Gallery][1] for [http://gallery.erata.net][2] but today i've decided to close it down. The number of vulnerabilities ( most of them critical ) discovered over the years got me thinking. You can see what i mean here [http://www.milw0rm.com/search.php?dong=coppermine][3]. 3 vulnerabilities found in the first two months of 2009.  4 in 2008. This remembers me of sendmail and bind ( witch I've heard got better but who cares about them anymore ).
 

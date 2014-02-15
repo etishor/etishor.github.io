@@ -1,37 +1,12 @@
 ---
 title: .NET Serialization Choices
-author: Iulian Margarintescu
 layout: post
 permalink: /net/net-serialization-choices/
 views:
   - 802
 dsq_thread_id:
   - 306769024
-categories:
-  - .NET
-tags:
-  - AJAX
-  - BinaryFormatter
-  - cqrs
-  - DataContractSerializer
-  - Event
-  - eventsourcing
-  - google
-  - Greg Young
-  - internal RPC protocols
-  - JavaScript
-  - json
-  - Json.NET
-  - Newtonsoft Json.Net
-  - nservicebus
-  - Protocol Buffers
-  - ProtocolBufers
-  - ProtocolBufers.NET
-  - Serialization
-  - ServiceStack Json
-  - SoapFormatter
-  - xml
-  - XML Serializer
+category: .NET
 ---
 ### Introduction
 

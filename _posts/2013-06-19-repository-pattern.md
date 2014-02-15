@@ -4,12 +4,6 @@ layout: post
 dsq_thread_id:
   - 1412443637
 category : Programming
-tags:
-  - nhibernate
-  - patterns
-  - practices
-  - RavenDb
-  - repository
 ---
 In the context of a question asked on the [RavenDb mailing list][1] I've decided to share my thoughts on the **Repository Pattern**.
 

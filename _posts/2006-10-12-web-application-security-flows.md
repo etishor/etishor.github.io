@@ -1,34 +1,9 @@
 ---
 title: Web application security flows
-author: Iulian Margarintescu
 layout: post
 permalink: /security/web-application-security-flows/
 comments: true
-categories:
-  - Security
-tags:
-  - application
-  - author
-  - database server
-  - error
-  - first security
-  - http
-  - member
-  - PHP
-  - Programming
-  - query
-  - safe
-  - Security
-  - server side programming
-  - server side programming language
-  - side programming language
-  - sql
-  - way
-  - web
-  - web application
-  - Web application security
-  - web applications
-  - WHERE
+category: Security
 ---
 Here goes... my first security related post :)
 

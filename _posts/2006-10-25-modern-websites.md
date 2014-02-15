@@ -1,6 +1,5 @@
 ---
 title: Modern Websites
-author: Iulian Margarintescu
 layout: post
 permalink: /projects/modern-websites/
 autometa:
@@ -9,26 +8,7 @@ views:
   - 1392
 dsq_thread_id:
   - 368361069
-categories:
-  - Projects
-tags:
-  - css
-  - css web
-  - designer
-  - document layout
-  - Doing Erata.NET
-  - Erata.NET
-  - Internet Explorer
-  - Modern
-  - real designer
-  - structure
-  - style sheets
-  - waste of time
-  - web 2.0
-  - Web design
-  - website
-  - xhtml
-  - xtheml
+category: Projects
 ---
 This is not really a project, just my opinion on how modern websites should be done.
 

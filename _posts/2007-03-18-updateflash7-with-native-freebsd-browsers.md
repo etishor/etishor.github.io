@@ -1,6 +1,5 @@
 ---
 title: 'Flash7 with native FreeBSD browsers'
-author: Iulian Margarintescu
 layout: post
 permalink: /freebsd/updateflash7-with-native-freebsd-browsers/
 autometa:
@@ -17,28 +16,7 @@ ratings_average:
   - 0
 dsq_thread_id:
   - 306768903
-categories:
-  - FreeBSD
-tags:
-  - bsd
-  - emulation layer
-  - firefox
-  - flash
-  - flash player 7
-  - flash7
-  - flash9
-  - FreeBSD
-  - install
-  - install flash player 7
-  - Linux
-  - linux emulation
-  - port
-  - ports
-  - ret
-  - Step
-  - switch branch
-  - unix
-  - update
+category: FreeBSD
 ---
 Finally the linux-flash7 plugin works with native firefox. If it's not working for you this may help.
 

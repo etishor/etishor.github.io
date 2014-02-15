@@ -1,30 +1,12 @@
 ---
 title: New Github account
-author: Iulian Margarintescu
 layout: post
 permalink: /net/new-github-account/
 views:
   - 592
 dsq_thread_id:
   - 307927148
-categories:
-  - .NET
-tags:
-  - ASP.NET
-  - cqrs
-  - ddd
-  - domain model
-  - Event
-  - event sourcing
-  - git
-  - Github
-  - jonathan oliver
-  - model
-  - sample
-  - short description
-  - Sourcing
-  - stream
-  - witch
+category: .NET
 ---
 I’ve opened a [Github account][1] where i keep some stuff I've been playing with recently. At the moment is mostly related to doing DDD with CQRS and Event Sourcing. 
 

@@ -1,29 +1,12 @@
 ---
 title: Context Matters
-author: Iulian Margarintescu
 layout: post
 permalink: /programming/context-matters/
 views:
   - 403
 dsq_thread_id:
   - 446173973
-categories:
-  - Programming
-tags:
-  - better tools
-  - developers
-  - development
-  - domain models
-  - framework
-  - Linq
-  - paragraph
-  - Programming
-  - rocks
-  - sql
-  - tool
-  - tools
-  - url
-  - wrong tool
+category: Programming
 ---
 The next paragraph made me remember of a lot of hours of discussions with various developers:
 

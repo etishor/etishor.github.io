@@ -1,29 +1,13 @@
 ---
 title: ASP.NET MVC or ASP.NET just got plesent
-author: Iulian Margarintescu
 layout: post
 permalink: /net/asp-net-mvc-or-asp-net-just-got-plesent/
 views:
   - 298
 dsq_thread_id:
   - 425945944
-categories:
-  - .NET
-tags:
-  - .NET
-  - aka
-  - asp
-  - ASP.NET
-  - c templates
-  - c++
-  - generic types
-  - lambda expressions
-  - mvc
-  - new job
-  - tool
-  - web
-  - web applications
-  - web apps
+category: .NET
+
 ---
 I've been really busy the last months with the new job where we use c#. I've grown found to it ... it has a lot of nice features ... lambda expressions, anonymous types, generic types. Sure there are a lot of thing that can be improved like real generic types ( aka C++ templates ) but it's a really reliable tool.
 

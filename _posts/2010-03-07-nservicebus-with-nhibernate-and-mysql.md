@@ -1,40 +1,12 @@
 ---
 title: NServiceBus with NHibernate and MySQL
-author: Iulian Margarintescu
 layout: post
 permalink: /net/nservicebus-with-nhibernate-and-mysql/
 views:
   - 2444
 dsq_thread_id:
   - 306769042
-categories:
-  - .NET
-tags:
-  - .NET
-  - Andreas Öhlund
-  - c sharp
-  - database server
-  - distributed
-  - fault tolerant
-  - hole design
-  - index column
-  - massage
-  - messaging
-  - MSDTC
-  - mysql
-  - mysql transaction
-  - nhibernate
-  - nservicebus
-  - sample applications
-  - summary
-  - tolerant services
-  - transaction
-  - transactions
-  - Udi Dahan
-  - unitOfWork
-  - unix
-  - unix experience
-  - Work
+category: .NET
 ---
 In the last project I have been working i finally got a chance to design and implement a solution based on [NServiceBus][1] and [NHibernate][2], two tools I’ve been watching for a while but never got a chance to play with in more than sample applications. For some external reasons I've been forced to use [MySQL][3] as a database server in this project.
 

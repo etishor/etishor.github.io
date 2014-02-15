@@ -1,37 +1,10 @@
 ---
 title: Qt4 Synchronous HTTP Request
-author: Iulian Margarintescu
 layout: post
 permalink: /qt-boost/synchronous-http-request/
 comments: true
 dsq_thread_id: '25 http://www.erata.net/weblog/qt-boost/2006/11/08/synchronous-http-request/'
-categories:
-  - 'Qt & boost'
-tags:
-  - API
-  - bsd
-  - class
-  - const
-  - driven operations
-  - driven programming
-  - error
-  - http
-  - int
-  - MIT
-  - ping
-  - Programming
-  - protected
-  - public
-  - qstring
-  - qt
-  - reque
-  - request
-  - return
-  - return error
-  - solution
-  - status
-  - virtual
-  - www.google.com
+category: qt-boost
 ---
 ## Problem
 

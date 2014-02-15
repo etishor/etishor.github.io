@@ -1,36 +1,10 @@
 ---
 title: Virtual Destructors
-author: Iulian Margarintescu
 layout: post
 permalink: /programming/virtual-destructors/
 comments: true
 dsq_thread_id: '26 http://www.erata.net/weblog/programming/2006/11/18/virtual-destructors/'
-categories:
-  - Programming
-tags:
-  - andrei alexandrescu
-  - author
-  - BAD
-  - c coding standards
-  - c++
-  - class
-  - destructor
-  - destructors
-  - Herb Sutter
-  - keyword
-  - list
-  - mailing
-  - member
-  - private
-  - protected
-  - public
-  - qt
-  - safe
-  - smart pointer
-  - type
-  - value semantics
-  - virtual
-  - virtual destructors
+category: Programming
 ---
 ## When do you need to declare a destructor virtual?
 

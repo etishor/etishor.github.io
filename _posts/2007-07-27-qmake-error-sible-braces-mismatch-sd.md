@@ -1,6 +1,5 @@
 ---
 title: 'qmake error:  sible braces mismatch %s:%d'
-author: Iulian Margarintescu
 layout: post
 permalink: /qt-boost/qmake-error-sible-braces-mismatch-sd/
 autometa:
@@ -17,22 +16,7 @@ ratings_average:
   - 0
 dsq_thread_id:
   - 315344963
-categories:
-  - 'Qt & boost'
-tags:
-  - block
-  - braces
-  - error
-  - Googling
-  - kdevelop
-  - middle hope
-  - mismatch
-  - parser generator
-  - qmake
-  - result
-  - uic
-  - unix
-  - windows
+category: qt-boost
 ---
 I've just received this error with qmake on windows. Googling for it showed no results so after i've solved the problem i decided to put it here.  
 

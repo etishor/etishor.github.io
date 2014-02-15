@@ -1,31 +1,12 @@
 ---
 title: 'C# HTTP Request'
-author: Iulian Margarintescu
 layout: post
 permalink: /net/csharp-http-request/
 views:
   - 810
 dsq_thread_id:
   - 315100233
-categories:
-  - .NET
-tags:
-  - .NET
-  - class
-  - csharp
-  - google
-  - http
-  - main string
-  - maner
-  - qt
-  - request
-  - response request
-  - string args
-  - synchronous
-  - System.Net
-  - today
-  - void
-  - webrequest
+category: .NET
 ---
 A few years ago I've written an article on [how to perform a synchronous HTTP][1] request using Qt 4.2. I I've seen this article today and since now I'm mostly working with C# i was wandering how fast can i do the same thing in c#. After very few minutes I've managed to came up with this:
 

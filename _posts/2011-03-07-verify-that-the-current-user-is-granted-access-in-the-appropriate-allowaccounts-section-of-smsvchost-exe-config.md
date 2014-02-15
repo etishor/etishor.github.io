@@ -1,39 +1,12 @@
 ---
 title: Verify that the current user is granted access in the appropriate allowAccounts section of SMSvcHost.exe.config
-author: Iulian Margarintescu
 layout: post
 permalink: /windows/verify-that-the-current-user-is-granted-access-in-the-appropriate-allowaccounts-section-of-smsvchost-exe-config/
 views:
   - 940
 dsq_thread_id:
   - 307706076
-categories:
-  - windows
-tags:
-  - .NET
-  - access
-  - administrator
-  - editor
-  - hosting
-  - http
-  - lt system
-  - Microsoft
-  - Microsoft Vista
-  - Microsoft Windows
-  - Microsoft.NET
-  - net.tcp
-  - netsh
-  - PsGetSid
-  - security identifier
-  - service
-  - SMSvcHost.exe.config
-  - user
-  - wcf
-  - WCF Service
-  - windows 7
-  - windows microsoft
-  - xml
-  - youraccount
+category: windows
 ---
 Quick tip that maybe will save others time:
 

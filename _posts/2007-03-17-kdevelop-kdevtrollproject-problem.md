@@ -1,29 +1,10 @@
 ---
 title: 'KDevelop - KDevTrollProject Problem'
-author: Iulian Margarintescu
 layout: post
 permalink: /freebsd/kdevelop-kdevtrollproject-problem/
 comments : true
 dsq_thread_id: 27 http://www.erata.net/weblog/freebsd/2007/03/17/kdevelop-kdevtrollproject-problem/
-categories:
-  - FreeBSD
-tags:
-  - bsd
-  - cpp
-  - error
-  - FreeBSD
-  - freebsd mailing
-  - houers
-  - kde
-  - kdevelop
-  - lex
-  - mailing
-  - parsers
-  - ping
-  - ports
-  - relink
-  - symbol
-  - undefined reference
+category: FreeBSD
 ---
 After updating kde to 3.5.6 and kdevelop to 3.4.0_1 ( around 15.03.2007 ) kdevelop failed to open qmake based projects. The error was "Error creating project management plugin KDevTrollProject".
 

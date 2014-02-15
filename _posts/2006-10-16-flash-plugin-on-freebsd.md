@@ -1,29 +1,10 @@
 ---
 title: Flash Plugin on FreeBSD
-author: Iulian Margarintescu
 layout: post
 permalink: /freebsd/flash-plugin-on-freebsd/
 comments: true
 dsq_thread_id: 20 http://www.erata.net/weblog/freebsd/2006/10/16/flash-plugin-on-freebsd/
-categories:
-  - FreeBSD
-tags:
-  - bsd
-  - firefox
-  - flash
-  - flash player 7
-  - flash player plugin
-  - flash7
-  - FreeBSD
-  - install
-  - install flash player 7
-  - Linux
-  - linux tar
-  - player
-  - ports
-  - root
-  - rtld
-  - solution
+category: FreeBSD
 ---
 ## Problem to solve
 

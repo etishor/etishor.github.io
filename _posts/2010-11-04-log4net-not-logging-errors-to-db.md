@@ -1,30 +1,12 @@
 ---
 title: Log4Net not logging errors to db
-author: Iulian Margarintescu
 layout: post
 permalink: /net/log4net-not-logging-errors-to-db/
 views:
   - 672
 dsq_thread_id:
   - 316198881
-categories:
-  - .NET
-tags:
-  - adonet appender
-  - atomicity
-  - configuration section
-  - database
-  - error
-  - errors
-  - log message
-  - log4net
-  - logging errors
-  - post
-  - transaction
-  - Unit Of Work
-  - use
-  - windows services
-  - Work
+category: .NET
 ---
 This is a short post about logging errors to db with log4net.
 

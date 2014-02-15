@@ -1,6 +1,5 @@
 ---
 title: myWeather widget
-author: Iulian Margarintescu
 layout: post
 permalink: /programming/myweather-widget/
 autometa:
@@ -17,23 +16,7 @@ views:
   - 11966
 dsq_thread_id:
   - 306768913
-categories:
-  - Programming
-tags:
-  - administration interface
-  - administrator
-  - init
-  - multiple users
-  - myweather
-  - page options
-  - PHP
-  - php function
-  - plugin
-  - return
-  - sidebar
-  - submenu
-  - widget
-  - wordpress
+category: Programming
 ---
 To create a quick and dirty widget from myWeather wordpress plugin just add the following to the end of myweather.php
 

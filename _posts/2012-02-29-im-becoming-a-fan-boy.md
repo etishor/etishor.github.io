@@ -1,18 +1,10 @@
 ---
 title: I'm becoming a fan boy
-author: Iulian Margarintescu
 layout: post
 permalink: /mac/im-becoming-a-fan-boy/
 dsq_thread_id:
   - 593743878
-categories:
-  - Mac
-tags:
-  - apple
-  - mac
-  - macbook
-  - macbook air
-  - osx
+category: Mac
 ---
 I could not resist anymore and i've bought a mac. I've been contemplating with the idea of getting a laptop lately and the [mac book air][1] was always coming at the top of the search results.
 

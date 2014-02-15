@@ -1,19 +1,12 @@
 ---
 title: NHibernate Cache Provider for Membase
-author: Iulian Margarintescu
 layout: post
 permalink: /net/nhibernate-cache-provider-membase/
 views:
   - 698
 dsq_thread_id:
   - 313328707
-categories:
-  - .NET
-tags:
-  - cache
-  - membase
-  - nhibernate
-  - provider
+category: .NET
 ---
 I've written a cache provider for [NHibernate][1] which uses [Membase][2] as a cache engine.
 

@@ -1,19 +1,12 @@
 ---
 title: '.NET Serialization Choices - Raven.Json'
-author: Iulian Margarintescu
 layout: post
 permalink: /net/net-serialization-choices-raven-json/
 views:
   - 738
 dsq_thread_id:
   - 306769045
-categories:
-  - .NET
-tags:
-  - json
-  - raven
-  - raven.json
-  - Serialization
+category: .NET
 ---
 This post is an addition to [.NET Serialization Choices][1] post.
 

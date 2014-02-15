@@ -12,18 +12,7 @@ head_meta:
   - name="keywords" content=""
 dsq_thread_id:
   - 672703597
-categories:
-  - FreeBSD
-tags:
-  - caption
-  - FreeBSD
-  - integration
-  - Microsoft Windows
-  - preview
-  - rdesktop
-  - width
-  - window
-  - windows
+category: FreeBSD
 ---
 Here is a preview of what you can do if you have a windows machine somewhere.
 

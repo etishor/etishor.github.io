@@ -1,19 +1,12 @@
 ---
 title: RavenDb EnsureDatabaseExists extension method
-author: Iulian Margarintescu
 layout: post
 permalink: /net/ravendb-ensuredatabaseexists-extension-method/
 views:
   - 20
 dsq_thread_id:
   - 460877763
-categories:
-  - .NET
-tags:
-  - database
-  - EnsureDatabaseExists
-  - multi-database
-  - RavenDb
+category: .NET
 ---
 Just a quick hint for others like me, who spent some minutes searching for the EnsureDatabaseExists method when trying to use [RavenDb][1] with  Multi-Databases. 
 

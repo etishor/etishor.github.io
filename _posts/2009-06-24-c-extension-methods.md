@@ -1,32 +1,12 @@
 ---
 title: 'C# Extension Methods'
-author: Iulian Margarintescu
 layout: post
 permalink: /net/c-extension-methods/
 views:
   - 480
 dsq_thread_id:
   - 312530825
-categories:
-  - .NET
-tags:
-  - .NET
-  - ASP.NET
-  - c extension
-  - c++
-  - class
-  - code
-  - extension methods
-  - html
-  - 'null'
-  - NullReferenceException
-  - public static string
-  - static class
-  - static method
-  - static methods
-  - syntax sugar
-  - TestClass
-  - world test
+category: .NET
 ---
 After a few months I've enjoyed the newly ( or not ) added extension methods in 3.0 yesterday i discovered that one of the assumptions I've made about them was false. My assumption was that if the instance on witch you call an extension method is NULL you would get a NullReferenceException. Turns out it's not the case and you can call the extension method on a null reference.
 

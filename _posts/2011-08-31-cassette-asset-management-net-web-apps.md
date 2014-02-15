@@ -1,22 +1,12 @@
 ---
 title: 'Cassette - Asset management for .NET web apps'
-author: Iulian Margarintescu
 layout: post
 permalink: /net/cassette-asset-management-net-web-apps/
 views:
   - 289
 dsq_thread_id:
   - 400686806
-categories:
-  - .NET
-tags:
-  - asp.net mvc
-  - cassette
-  - combine
-  - JavaScript
-  - minify
-  - stylesheets
-  - web
+category: .NET
 ---
 A few weeks ago i've started using [Cassette][1], a very nice asset management tool for .net web applications. It will basically take your assets ( javascript, coffescript, css, images ) and do the right thing with them ( combine, minify etc).
 

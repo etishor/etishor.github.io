@@ -1,6 +1,5 @@
 ---
 title: 'Flash on FreeBSD - Gnash'
-author: Iulian Margarintescu
 excerpt: "Watching flash content on FreeBSD was and still is a problem. It\'s sad Adobe won\'t publish a native version of flash for FreeBSD, or even better open the sources for the flash player. It\'s strange they don\'t, unless the sources are a real mess I don\'t see any strong reason for not doing so. Now that rumors are found about new technologies for web graphics likesvg, html 5, flash might not be so popular in the future."
 layout: post
 permalink: /freebsd/flash-on-freebsd-gnash/
@@ -8,24 +7,7 @@ views:
   - 2509
 dsq_thread_id:
   - 312303416
-categories:
-  - FreeBSD
-tags:
-  - Adobe
-  - flash
-  - flash7
-  - FreeBSD
-  - gnash
-  - Linux
-  - linux plugin
-  - linux-flash
-  - player
-  - plugin
-  - reason
-  - svg
-  - web
-  - web graphics
-  - Youtube
+category: FreeBSD
 ---
 Watching flash content on FreeBSD was and still is a problem. It's sad Adobe won't publish a native version of flash for FreeBSD, or even better open the sources for the flash player. It's strange they don't, unless the sources are a real mess I don't see any strong reason for not doing so. Now that rumors are found about new technologies for web graphics like svg, html 5, flash might not be so popular in the future.
 

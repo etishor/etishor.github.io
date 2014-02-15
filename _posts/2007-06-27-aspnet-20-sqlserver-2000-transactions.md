@@ -1,6 +1,5 @@
 ---
 title: ASP.NET 2.0 and SQLServer 2000 Transactions
-author: Iulian Margarintescu
 layout: post
 permalink: /net/aspnet-20-sqlserver-2000-transactions/
 autometa:
@@ -17,30 +16,7 @@ ratings_average:
   - 0
 dsq_thread_id:
   - 328628114
-categories:
-  - .NET
-tags:
-  - ADO.NET
-  - ASP.NET
-  - BeginTransaction
-  - class
-  - datasets
-  - error
-  - performance problem
-  - public
-  - public interface
-  - public static void
-  - return
-  - solution
-  - sql
-  - SqlCommand
-  - SqlConnection
-  - sqlserver
-  - sqlserver 2000
-  - sqlserver 2005
-  - transaction
-  - transactions
-  - type
+category: .NET
 ---
 The new ADO.NET 2.0 and it's typed datasets and table adapters are very useful tools for creating a DAL in you application. Still when working with SQLServer 2000 implementing transactions is a bit tricky. 
 

@@ -1,6 +1,5 @@
 ---
 title: Life with g++
-author: Iulian Margarintescu
 excerpt: The intention of this article is to show a few useful ( i hope ) tips about using g++ in the every day development cycle. Also this article describes three build configurations that should help the developer catch bugs in the early stages of development.
 layout: post
 permalink: /programming/life-with-g/
@@ -8,31 +7,7 @@ views:
   - 8641
 dsq_thread_id:
   - 306768952
-categories:
-  - Programming
-tags:
-  - application
-  - build
-  - c++
-  - compiler
-  - compiler bug
-  - computation intensive software
-  - core dump
-  - debug
-  - developer release
-  - development
-  - error
-  - fno
-  - g++
-  - gcc
-  - optimization
-  - optimizations
-  - Programming
-  - release
-  - safe
-  - Wall
-  - warning
-  - Werror
+category: Programming
 ---
 The intention of this article is to show a few useful ( i hope ) tips about using g++ in the every day development cycle. Also this article describes three build configurations that should help the developer catch bugs in the early stages of development.
 

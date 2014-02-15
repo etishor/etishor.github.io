@@ -1,27 +1,12 @@
 ---
 title: Nokia to Add LGPL to Qt Licensing Model
-author: Iulian Margarintescu
 layout: post
 permalink: /news/nokia-to-add-lgpl-to-qt-licensing-model/
 views:
   - 476
 dsq_thread_id:
   - 447977559
-categories:
-  - News
-tags:
-  - development
-  - incredible news
-  - LGPL
-  - lgpl license
-  - license option
-  - model
-  - news
-  - nokia
-  - point
-  - post
-  - qt
-  - what this means
+category: News
 ---
 This is incredible news. No point in making this post longer ... who knows what this means understands why it's incredible. Who does not know what this means ... won't care anyhow :)
 

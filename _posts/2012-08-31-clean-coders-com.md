@@ -1,17 +1,10 @@
 ---
 title: Clean Coders .COM
-author: Iulian Margarintescu
 layout: post
 permalink: /programming/clean-coders-com/
 dsq_thread_id:
   - 825741595
-categories:
-  - Programming
-tags:
-  - Clean Code
-  - podcast
-  - Robert C. Martin
-  - Uncle Bob
+category: Programming
 ---
 Lately I've started watching episodes from [CleanCoders.com][1], a podcast created by Uncle Bob ( Robert C. Martin ) and i must say they are excellent.
 

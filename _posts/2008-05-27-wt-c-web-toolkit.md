@@ -1,6 +1,5 @@
 ---
 title: Wt, C++ Web Toolkit
-author: Iulian Margarintescu
 excerpt: "Wt (pronounced \'witty\') is a C++ library and application server for developing and deploying web applications. It is not a \'framework\', which enforces a way of programming, but a library."
 layout: post
 permalink: /programming/wt-c-web-toolkit/
@@ -8,30 +7,7 @@ views:
   - 1911
 dsq_thread_id:
   - 306768947
-categories:
-  - Programming
-tags:
-  - application
-  - asp
-  - boost
-  - c++
-  - code
-  - desktop
-  - generic code
-  - html
-  - native app
-  - PHP
-  - signal mechanism
-  - way
-  - web
-  - web 2.0
-  - web applications
-  - web apps
-  - web graphical interface
-  - web toolkit
-  - Web Toolkit Wt
-  - web-app
-  - xhtml
+category: Programming
 ---
 [Wt][1] (pronounced 'witty') is a C++ library and application server for developing and deploying web applications. It is not a 'framework', which enforces a way of programming, but a library.
 

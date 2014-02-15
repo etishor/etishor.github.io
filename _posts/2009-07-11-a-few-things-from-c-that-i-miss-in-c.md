@@ -4,30 +4,6 @@ layout: post
 comments : true
 dsq_thread_id: 90 http://www.erata.net/?p=90
 category : net
-tags:
-  - c sharp
-  - c++
-  - class
-  - const
-  - const correctness
-  - control
-  - cpp
-  - design bugs
-  - destruction
-  - deterministic destruction
-  - development
-  - generics
-  - immutable objects
-  - lambda expressions
-  - Microsoft Windows
-  - object
-  - paradigms
-  - partial specialization
-  - reference type
-  - relay
-  - static initialization
-  - templates
-  - value type
 ---
 The last 6-7 months i've been working mostly with C# and to be honest I've grown found to it. It has really nice features like lambda expressions,   auto properties, extension methods, LINQ witch can really speed up things in terms development time.
 

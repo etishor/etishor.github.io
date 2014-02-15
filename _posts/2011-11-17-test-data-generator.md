@@ -1,19 +1,10 @@
 ---
 title: Test Data Generator
-author: Iulian Margarintescu
 layout: post
 permalink: /projects/test-data-generator/
 dsq_thread_id:
   - 474955486
-categories:
-  - Projects
-tags:
-  - fill objects
-  - generator
-  - persistance
-  - random data
-  - Serialization
-  - test data
+category: Projects
 ---
 I've pushed to github a new project, [TestDataGenerator][1] that should help with filling random objects with data. I felt the need for a tool like this when testing various serialization techniques and persistence strategies.
 
