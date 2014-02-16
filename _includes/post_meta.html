@@ -1,0 +1,6 @@
+<span class="post-date">
+    {{ page.date | date_to_string }} | 
+    {{ page.categories | join: ', ' }}{{ post.categories | join: ', ' }} | 
+    <a href="{{ post.url }}#disqus_thread"{% if page.disqus_identifier %} data-disqus-identifier="{{ page.disqus_identifier }}"{% endif %}>comments</a> |
+    <a href="{{ site.github_repo_url }}edit/master/{{ page.path }}">edit</a>
+</span>

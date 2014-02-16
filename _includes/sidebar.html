@@ -24,12 +24,6 @@
       <li class="sidebar-nav-item{% if page.title == "Erata.NET" %} active{% endif %}">
         <a href="/">Home</a>
       </li>
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
@@ -43,5 +37,14 @@
     </ul>
 
     <p>Iulian Margarintescu &copy; {{ site.time | date: '%Y' }}.<br/> All rights reserved.</p>
+
+    <div class="share">
+      <div class="addthis_toolbox addthis_default_style ">
+        <a class="addthis_button_tweet"></a>
+        <a class="addthis_counter addthis_pill_style"></a>
+      </div>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"></script>
+    </div>
+    
   </div>
 </div>

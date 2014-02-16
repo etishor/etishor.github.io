@@ -11,9 +11,10 @@ title: Erata.NET
         {{ post.title }}
       </a>
     </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
+    <span class="post-date">
+      {{ post.date | date_to_string }} | {{ post.categories | join: ', ' }} | 
+      <a href="{{ site.github_repo_url }}edit/master/{{ post.path }}">edit</a>
+    </span>
     {{ post.content }}
   </div>
   {% endfor %}
