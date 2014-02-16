@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: 
-
-Sitemap: http://erata.net/sitemap.xml 
+Sitemap: http://www.erata.net/sitemap.xml 
