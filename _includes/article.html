@@ -11,5 +11,8 @@
 		<div  itemprop="articleBody">		
 			{{ content }}
 		</div>
-	{% endif %}		
+	{% endif %}
+	{% unless page.sharing == false %}
+    	{% include post/sharing.html %}
+	{% endunless %}
 </article>
