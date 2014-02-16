@@ -3,6 +3,10 @@ layout: default
 ---
 {% include article.html %}
 
+{% unless page.sharing == false %}
+    {% include post/sharing.html %}
+{% endunless %}
+
 <div class="pagernav"> 
     <div class="previous"> 
     {% if page.previous.url %} 
