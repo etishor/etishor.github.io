@@ -12,7 +12,7 @@ Example configuration can be found in the [test project][4].
   
 To use the cache provider add the following lines to the hnibernate configuration:
 
-{% highlight xml linenos %}
+{% highlight xml %}
 <property name='cache.provider_class'>Nhibernate.Caches.Membase.MembaseCacheProvider, Nhibernate.Caches.Membase</property>
 <property name='cache.use_second_level_cache'>true</property></pre>
 {% endhighlight %}
