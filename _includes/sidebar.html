@@ -16,5 +16,9 @@
       <a rel="me" href="http://feeds.feedburner.com/feederatanet" target="_blank"><img src="/images/Layout/rss.png" alt="RSS Feed" title="Erata.NET RSS Feed"/></a>
     </p>
 
+    {% unless page.sharing == false %}
+      {% include post/sharing.html %}
+    {% endunless %}
+
   </div>
 </div>
