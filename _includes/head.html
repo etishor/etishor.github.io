@@ -1,43 +1,28 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>{{ page.title }}</title>
-		<meta name="author" content="Iulian Margarintescu" />
-		<meta name="description" content="Erata.NET - Iulian Margarintescu's blog. If we don't have the solution you have the wrong problem">
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" href="http://www.gravatar.com/avatar/304fa0b2c6959637986e716642c5e57d.png">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@etishor">
-		<meta name="twitter:title" content="Erata.NET">
-		<meta name="twitter:description" content="If we don't have the solution you have the wrong problem">
-		<meta name="twitter:creator" content="@etishor">
-		<meta name="twitter:image:src" content="http://www.erata.net/images/erata.net.png">
-		<meta name="twitter:domain" content="www.erata.net">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-		<link rel="author" href="https://plus.google.com/+IulianMargarintescu" />
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
 
-		<link href="http://feeds.feedburner.com/feederatanet" rel="alternate" title="Erata.NET" type="application/atom+xml">
-		<link rel="canonical" href="http://www.erata.net/">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700">
 
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/bootstrap-blog.css">
-		<link rel="stylesheet" href="/css/syntax.css">
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
 
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	    <!--[if lt IE 9]>
-	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	    <![endif]-->
-	</head>
-	<body>
-	<!--[if lt IE 7]>
-	    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>

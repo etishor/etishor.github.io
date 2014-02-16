@@ -3,7 +3,7 @@
 #
 author: Iulian Margarintescu
 name: Erata.NET
-description: If we don't have the solution you have the wrong problem
+description: Eti's Blog
 url: http://www.erata.net
 title: Erata.NET
 
@@ -44,5 +44,5 @@ excerpt_link: "Read on &rarr;"
 titlecase: true 
 
 safe: true
-lsi: false
+lsi: true
 pygments: true
