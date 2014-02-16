@@ -131,7 +131,9 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-
+.sidebar-module p{
+  margin-top: 20px;
+}
 
 /* Pagination */
 .pagernav {
@@ -144,8 +146,6 @@ h6, .h6 {
 
 .share {
     padding: 15px 0;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #ddd;
 }
 
 /*
@@ -153,7 +153,9 @@ h6, .h6 {
  */
 
 .blog-post {
-  margin-bottom: 60px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 .blog-post-title {
   margin-bottom: 5px;
