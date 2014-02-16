@@ -25,9 +25,8 @@ disqus_show_comment_count: true
 # Google Analytics
 google_analytics_tracking_id: UA-632446-1
 
-
 addthis_profile_id: ra-52f64bc20be7aa3d
-
+addthis: true
 #
 # Jekyll Settings
 #
