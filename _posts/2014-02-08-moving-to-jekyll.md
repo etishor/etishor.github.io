@@ -2,7 +2,6 @@
 layout : post
 title : Moving to Jekyll
 comments : true
-date : 2014-02-08
 category : general
 tags : [blog,wordpress,jekyll]
 ---
