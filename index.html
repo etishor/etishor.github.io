@@ -5,6 +5,7 @@ title: Erata.NET
 
 <div class="posts">
   {% for post in paginator.posts %}
+  {% unless post.redirect %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
@@ -17,6 +18,7 @@ title: Erata.NET
     </span>
     {{ post.content }}
   </div>
+  {% endunless %}
   {% endfor %}
 </div>
 
