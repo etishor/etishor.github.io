@@ -3,6 +3,7 @@ title: .NET Serialization Choices
 layout: post
 comments: true
 category: NET
+dsq_thread_id: 223 http://www.erata.net/?p=223
 ---
 ### Introduction
 
