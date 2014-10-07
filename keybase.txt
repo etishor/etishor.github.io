@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/eti
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.erata.net
+  * I am eti (https://keybase.io/eti) on keybase.
+  * I have a public key with fingerprint 2223 A517 7F02 2E18 7878  C84A 7E3C FE47 A1A0 BBE8
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.6.2"
+        },
+        "key": {
+            "fingerprint": "2223a5177f022e187878c84a7e3cfe47a1a0bbe8",
+            "host": "keybase.io",
+            "key_id": "7E3CFE47A1A0BBE8",
+            "uid": "db6c8ed6f1eddd8de425e34b30000600",
+            "username": "eti"
+        },
+        "merkle_root": {
+            "ctime": 1412690812,
+            "hash": "06c6deb7f036b9700f94c0f521c91f1757334d43a0138dc9495538b1d1cc368da8c69f792cf94ff5ce8088781e7f733b090a6f4ac53fefc515b5ab49a6a4b713",
+            "seqno": 73502
+        },
+        "service": {
+            "hostname": "www.erata.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1412690840,
+    "expire_in": 157680000,
+    "prev": "dfebe798357eea1ea503b2ec413a470a7f91bb346f97993b7f38fe680793fa32",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.13 (MingW32)
+
+owFdUntQFVUcvtxMUEOURiEmX6sZGsLunn1eLz5wQMdGkcKcwMSzu+fcuxe4e9m7
+cAWUDIMBrEij8c44WiGZ5ZiZj2IEB8yrzTRpU6SpBYOjCdfbEFaUL2qXoelx9p9z
+9vf9vvN93++8HvuQzR5V5Rxe/s7bJ/uivuiXbLngl2AlIWlKOeGoJOQiFXkNa+eF
+xYhwEIWoXIJ+lKpqM72aglI9/pmjmBSiDOl+VfOaKDKVS6WJLSkW3GrGqteFdJ+u
+WlwETdMAshTPY5KmESXw5icLDOQRkDFieEhBUpKQYFK6Nb/xn1uJEc4CVTH/8plg
+WVYmwy+llpIZGZkWvnSkoEicLCCFwxRSFEVQEEOzCDASIM3FkaQF9CN91BIyVEtq
+MdILi1CBrmkjfmVDtaoUQ9GcSAoUbYqBfrdljpM5BUmmesBJIk+SWGRkErM0JYsU
+pniWB4BRGABJCgiKLDIiywJBohRKlgEnKFCQORHzIi2bjRizMhJIwYyAQjw2WyVS
+JCGHGSizACMssxQrsVBiRMhBRuIpYKr3oxKvRjh4wJL0Fuuol6kysmRbgY36CgQC
+qUiHBkz1Ims8Pl0zNFkrMktuw/A5LNNGuW8EiqSCEZIDMiqQVK9izuvfA6VM6P8C
+YcgUAm3yqToqUC0Ey3OCFa91DyqzhoCRhHhRACyPEKQQZEkg0UhmKAAZnoQ8FilJ
+AgyHRV4UgZknEDAySXgRYAjof2wCUyd0mZR+1eWFRqmOiC319sfH2KLstrEP260X
+axs/btLfz/jDsrg7UWpOsSfzuYSUuL63Us5TsHROhAt2OYvuXqi5PnikpfvRgcjv
+mROOZc+s3ntbLmxsWHvm00TnE499UNSa+1Xz1JcPzWhLPPDU6YbTy1zuK63bQrvz
+3sSVoTppQ+W52vS51xJjr87LHTZQnu59csaVV9M7tvVX/bF/TTZ+f3fzn5EL07Rg
+Uf490eH68temQXa//dsx4w9HcrVuPOjZxzw9N9y5csnhHVsPNiRPDMRXb09Kv54V
+Sv5+QkHdT56kmLSLrqaDjpaTPeEz1c4Hzy46nxAYH4q3FXbdaV9cUZ8QGdpwueRH
+eDsnnL5x3jSX6E6avzB/6FZSdZN3T9q7YzYxu6cfaz50fnvGD8N3toWdntWB2xV7
+blz9pH9KcB29WHvk6M3WVbOdoXVtO4/GLKpGRy5F5gy5u2Lk2OvtTdEdwVde02tX
+Zc0uuRfjXF9RH2///P6qusJ9687ixp5g1sb3fv66+Xjait5FVEdj0uT5TDLekXtk
+SfjurcDs/KH+jOPdk/s+oqM/Wx49uKCzKhhYqa8ee//GxMuOm/beFHZ6lbA+e2/J
+b3HDF/MmfZdXkzj/mh4+W3vqhXYy8nEokdrhSchJ2Dywua13J9ESdnjzBtbGnpj1
+Yv3O0uKGcy+9MbXU3XuJLvXZOm0X1pyy7ZvSNu4o6qmOfuZEj7H1weBi964GceGC
+b3atKPdl1zwv/gU=
+=lISQ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/eti
+
+==================================================================
